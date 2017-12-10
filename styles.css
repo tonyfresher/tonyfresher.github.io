@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(90deg, #29e1b3, #aafbd7);
+    width: 100%;
+    height: 100%;
+
+    animation: fade-in 1.5s ease-out,
+               gradient-animation 10s linear 1.5s infinite;
+}
+
+.main__title {
+    margin: auto;
+
+    color: #fff;
+
+    font-size: 48px;
+
+    text-transform: uppercase;
+}
+
+.main__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main__link {
+    margin: 16px;
+    color: #fff;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.main__link:hover {
+    color: #ff0101;
+}
+
+@keyframes gradient-animation {
+    from {
+        filter: hue-rotate(0deg)
+    }
+
+    to {
+        filter: hue-rotate(360deg)
+    }
+}
+
+@keyframes fade-in {
+    from {
+        filter: blur(10px)
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
