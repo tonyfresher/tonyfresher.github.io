@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed');
+@import url('https://github.com/tonsky/FiraCode/raw/master/distr/woff2/FiraCode-Light.woff2');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,500');
 
 html {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -22,10 +23,11 @@ body {
     left: 0;
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
-    background: linear-gradient(90deg, #29e1b3, #aafbd7);
-    animation: gradient-animation 10s linear 1.5s infinite;
+    background: #1d1d1d;
+    /* background: linear-gradient(90deg, #29e1b3, #aafbd7);
+    animation: gradient-animation 10s linear 1.5s infinite; */
 }
 
 .main {
@@ -33,53 +35,112 @@ body {
     flex-direction: column;
     align-items: center;
 
-    width: 100%;
     height: 100%;
 
-    animation: fade-in 1.5s ease-out;
+    animation: fade-in 1.2s ease-out;
 }
 
-.main__title {
+.main__code-sheet {
     margin: auto;
-    padding: 8px 0 8px 16px;
+
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+
+    background: #1d1d1d;  
     
-    border: 2px solid #fff;
+    text-align: left;
+}
 
+.main__code-line {
+    display: flex;
+    flex-direction: row;
+
+    padding: 4px 0;
+}
+
+.main__code {
+    white-space: pre-wrap;
+}
+
+.main__code.kw {
+    color: #a1a1a1;
+}
+
+.main__code.str {
+    color: #4eee7e;
+}
+
+.main__code.var {
+    color: #ee4e4e;
+}
+
+.main__code.func {
+    color: #4d77eb;
+}
+
+.main__code.parath {
+    color: #a3bcff;
+}
+
+.main__code.class {
+    color: #f1cd55;
+}
+
+.main__code.prop {
     color: #fff;
+}
 
-    font-size: 48px;
-    letter-spacing: 16px;
+.main__code.div {
+    color: #fff;
+}
 
-    text-align: center;
+.main__code.comment {
+    color: #696969;
+}
 
-    text-transform: uppercase;
+.main__link {
+    text-decoration: none;
+
+    /* transition: color .2s, background-color .2s; */
+}
+
+.main__link:hover {
+    font-style: italic;
+
+    color: #4e78ee;
+
+    text-decoration: underline;
 }
 
 .main__footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 
-    font-family: 'Barlow', sans-serif;
-
-    margin: 0 0 8px;
-}
-
-.main__link {
     padding: 16px;
-    color: #fff;
 
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    
     text-align: center;
-    text-decoration: none;
 
-    transition: color .3s, background-color .3s;
+    color: #fff;
 }
 
-.main__link:hover {
-    color: #4e78ee;
+.main__name {
+    margin: 0 0 4px;
+
+    text-transform: uppercase;
+
+    font-weight: 500;
+    letter-spacing: .8ch;
 }
 
-.main__link:hover:visited {
-    color: #e0569b;
+.main__copy {
+    color: #7a7a7a;
+
+    font-weight: 200;
+    letter-spacing: .3ch;
 }
 
 @keyframes gradient-animation {
