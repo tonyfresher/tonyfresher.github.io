@@ -6,7 +6,10 @@ const generator = require('handlebars-generator');
 const resumeData = require('./data/resume');
 
 const srcDirectory = path.join(__dirname, 'views');
-const distDirectory = path.join(__dirname, 'dist');
+
+const splitted = __dirname.split(path.sep)
+splitted.pop()
+const distDirectory = splitted.join(path.sep);
 
 generator.registerSourceDirectory(srcDirectory, { extension: 'hbs' });
 

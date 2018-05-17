@@ -4,7 +4,7 @@ html {
     font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
     --background-color: #fefffe;
     --text-color: #151515;
-    --subheader-text-color: #a7a7a7;
+    --subheader-text-color: #777;
     --link-text-color: #256eff;
 }
 
@@ -157,6 +157,8 @@ section {
     font-weight: 300;
 
     margin: 12px 0;
+
+    transition: opacity 0.1s;
 }
 
 .technology__name {
