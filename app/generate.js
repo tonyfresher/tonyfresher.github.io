@@ -13,8 +13,9 @@ const distDirectory = splitted.join(path.sep);
 
 generator.registerSourceDirectory(srcDirectory, { extension: 'hbs' });
 
-generator.registerPage('index', 'index');
-generator.registerPage('resume', 'resume', resumeData);
+generator.registerPage('index', 'index', { staticBasePath: './app/public/'});
+generator.registerPage('resume', 'resume',
+    Object.assign({ staticBasePath: './app/public/'}, resumeData));
 
 generator.generatePages(distDirectory, { extension: 'html' }, error => {
     if (error) console.error(err.message);
