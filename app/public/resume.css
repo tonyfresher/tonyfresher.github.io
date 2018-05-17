@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700');
+
+html {
+    font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
+    --background-color: #fefffe;
+    --text-color: #151515;
+    --subheader-text-color: #a7a7a7;
+    --link-text-color: #256eff;
+}
+
+body {
+    margin: 0;
+
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 32px 24px;
+}
+
+.header {
+    margin: 0 0 16px;
+}
+
+.name {
+    display: block;
+
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.email {
+    display: block;
+
+    color: var(--subheader-text-color);
+}
+
+.phone {
+    display: block;
+
+    color: var(--subheader-text-color);
+}
+
+.about {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    white-space: pre-wrap;
+}
+
+section {
+    padding-left: 8px;
+    border-left: 2px solid var(--text-color);
+}
+
+.section-header {
+    margin: 16px 0 12px;
+
+    font-size: 24px;
+}
+
+.education__university {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--text-color);
+}
+
+.education__speciality {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.education__period {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: var(--subheader-text-color);
+}
+
+.job__company {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--text-color);
+}
+
+.job__position {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.job__period {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: var(--subheader-text-color);
+}
+
+.job__description {
+    display: block;
+
+    margin: 2px 0 0;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    white-space: pre-wrap;
+}
+
+@media screen and (min-width: 900px) {
+    .technologies-table {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 12px;
+    }
+}
+
+.technology:not(:nth-child(1)),
+.technology:not(:nth-child(1)) {
+    opacity: 0.4;
+}
+
+.technology:not(:nth-child(1)):hover,
+.technology:not(:nth-child(1)):hover {
+    opacity: 1;
+}
+
+.technology {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin: 12px 0;
+}
+
+.technology__name {
+    display: block;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.technology__courses {
+    display: block;
+
+    color: var(--subheader-text-color);
+}
+
+.technology__projects {
+    display: block;
+}
+
+.technology__project-link {
+    display: flex;
+
+    width: max-content;
+}
+
+.project-link__path {
+    opacity: 0.6;
+}
+
+.connects-block {
+    margin: 32px 0 0;    
+}
+
+.connect {
+    margin: 0 12px 0 0;
+}

@@ -1,0 +1,64 @@
+[
+    {
+        "name": "iOS на Swift",
+        "courses": "школа мобильной разработки, стажировка",
+        "projects": "iOS-проекты",
+        "project-links": [
+            {
+                "link": "https://github.com/tonyfresher/notes-ios",
+                "path": "github.com/tonyfresher/",
+                "accent": "notes-ios"
+            }
+        ]
+    },
+    {
+        "name": "Python 3",
+        "courses": "матмеховский курс",
+        "projects": "таски по учёбе, алгоритмы, ML",
+        "project-links": [
+            {
+                "path": "github.com/tonyfresher/",
+                "accent": "cubes"
+            }
+        ]
+    },
+    {
+        "name": "HTML+CSS+JavaScript",
+        "courses": "школа разработки интерфейсов",
+        "projects": "таски по курсу ШРИ, прототипирование макетов",
+        "project-links": [
+            {
+                "path": "github.com/tonyfresher/",
+                "accent": "webdev-task-1"
+            }
+        ]
+    },
+    {
+        "name": "Android на Java",
+        "courses": "школа мобильной разработки",
+        "project-links": [
+            {
+                "path": "github.com/tonyfresher/",
+                "accent": "notes-android"
+            }
+        ]
+    },
+    {
+        "name": "C#",
+        "courses": "матмеховский курс по основам программирования,\nпроектированию приложений"
+    },
+    {
+        "name": "Java",
+        "courses": "матмеховский курс по основам ООП"
+    },
+    {
+        "name": "Machine Learning",
+        "courses": "матмеховский спецкурс по ML и вероятностным графическим моделям",
+        "project-links": [
+            {
+                "path": "github.com/tonyfresher/",
+                "accent": "ml-tasks"
+            }
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Антон Фрешер | Резюме</title>
+    <link rel="stylesheet" href="{{ staticBasePath }}resume.css">
+    <meta property="og:title" content="Anton Fresher."/>
+    <meta property="og:type" content="profile"/>
+</head>
+<body>
+<main class="main">
+    <div class="header">
+        <h1 class="name">{{ profile.name }}</h1>
+        <span class="email">{{ connects.email }}</span>
+        <span class="phone">{{ connects.phone }}</span>
+    </div>
+    <p class="about">{{ profile.about }}</p>
+    <section class="education-block">
+        <h2 class="section-header">Образование</h2>
+        {{#each education }}
+        <div class="education">
+            <a href="{{ link }}" class="education__university" target="_blank">{{ university }}</a>
+            <span class="education__speciality">{{ speciality }}</span>
+            <span class="education__period">{{ period }}</span>
+        </div>
+        {{/each }}
+    </section>
+    <section class="jobs-block">
+        <h2 class="section-header">Опыт</h2>
+        {{#each jobs }}
+        <div class="job">
+            <a href="{{ link }}" class="job__company" target="_blank">{{ company }}</a>
+            <span class="job__position">{{ position }}</span>
+            <span class="job__period">{{ period }}</span>
+            <span class="job__description">{{ description }}</span>
+        </div>
+        {{/each }}
+    </section>
+    <section class="technologies-block">
+        <h2 class="section-header">Языки/технологии</h2>
+        <div class="technologies-table">
+            {{#each technologies }}
+            <div class="technology">
+                <span class="technology__name">{{ name }}</span>
+                <span class="technology__courses">{{ courses }}</span>
+                {{!-- {{#if projects }}
+                <span class="technology__projects">{{ projects }}</span>
+                {{/if }} --}}
+                {{#each project-links }}
+                <a href="https://{{ path }}{{ accent }}" class="technology__project-link" target="_blank">
+                    <span class="project-link__path">{{ path }}</span>
+                    <span>{{ accent }}</span>
+                </a>
+                {{/each }}
+            </div>
+            {{/each }}
+        </div>
+    </section>
+    <div class="connects-block">
+        {{#each connects.social }}
+        <a href="{{ link }}" class="connect" target="_blank">{{ name }}</a>
+        {{/each }}
+    </div>
+</main>
+</body>
+</html>
