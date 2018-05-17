@@ -37,74 +37,73 @@ body {
 
     height: 100%;
 
-    animation: fade-in 1.2s ease-out;
+    animation: fade-in 0.8s ease-out;
 }
 
-.main__code-sheet {
+.code-sheet {
     margin: auto;
 
     font-family: 'Fira Code', monospace;
-    font-size: 20px;
 
     background: #1d1d1d;  
     
     text-align: left;
 }
 
-.main__code-line {
+.code-line {
     display: flex;
     flex-direction: row;
 
     padding: 4px 0;
 }
 
-.main__code {
+.code {
     white-space: pre-wrap;
 }
 
-.main__code.kw {
+.code.kw {
     color: #a1a1a1;
 }
 
-.main__code.str {
+.code.str {
     color: #4eee7e;
 }
 
-.main__code.var {
+.code.var {
     color: #ee4e4e;
 }
 
-.main__code.func {
+.code.func {
     color: #4d77eb;
 }
 
-.main__code.parath {
+.code.parath {
     color: #a3bcff;
 }
 
-.main__code.class {
+.code.class {
     color: #f1cd55;
 }
 
-.main__code.prop {
+.code.prop {
     color: #fff;
 }
 
-.main__code.div {
+.code.div {
     color: #fff;
 }
 
-.main__code.comment {
+.code.comment {
     color: #696969;
 }
 
-.main__link {
+.link {
     text-decoration: none;
 
     /* transition: color .2s, background-color .2s; */
 }
 
-.main__link:hover {
+.link:hover {
     font-style: italic;
 
     color: #4e78ee;
@@ -112,7 +111,7 @@ body {
     text-decoration: underline;
 }
 
-.main__footer {
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +126,7 @@ body {
     color: #fff;
 }
 
-.main__name {
+.footer__name {
     margin: 0 0 4px;
 
     text-transform: uppercase;
@@ -136,7 +135,7 @@ body {
     letter-spacing: .8ch;
 }
 
-.main__copy {
+.footer__copy {
     color: #7a7a7a;
 
     font-weight: 200;
@@ -160,5 +159,38 @@ body {
 
     to {
         filter: blur(0px);
+    }
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 320px) {
+    .code-sheet {
+        font-size: 10px;
+    }
+
+    .footer {
+        font-size: 8px;
+    }
+}
+
+/* Mobile and Tablet */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .code-sheet {
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .code-sheet {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 15px;
     }
 }
