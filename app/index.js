@@ -4,6 +4,8 @@ require('dotenv').config({ path: `${__dirname}/.env` });
 
 const path = require('path');
 const express = require('express');
+const hbs = require('hbs');
+
 const controller = require('./controller/index');
 
 const staticDirectory = path.join(__dirname, 'public');
@@ -20,6 +22,10 @@ app
     .get('/', controller.index)
     .get('/resume', controller.resume)
     .all('*', controller.error404);
+
+hbs.registerHelper('multipleElements', array => {
+    return array.length > 1;
+});
 
 app.listen(process.env.PORT);
 
