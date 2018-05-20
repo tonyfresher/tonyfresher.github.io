@@ -135,7 +135,7 @@ section {
 }
 
 @media screen and (min-width: 900px) {
-    .technologies-table {
+    .collapsable-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 12px;
@@ -172,10 +172,6 @@ section {
     display: block;
 
     color: var(--subheader-text-color);
-}
-
-.technology__projects {
-    display: block;
 }
 
 .technology__project-link {

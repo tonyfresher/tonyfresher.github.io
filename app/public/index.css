@@ -1,8 +1,7 @@
-@import url('https://github.com/tonsky/FiraCode/raw/master/distr/woff2/FiraCode-Light.woff2');
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,500');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:200,500');
 
 html {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', 'Oswald', sans-serif;
 }
 
 body {
@@ -43,7 +42,7 @@ body {
 .code-sheet {
     margin: auto;
 
-    font-family: 'Fira Code', monospace;
+    font-family: 'IBM Plex Mono', 'Fira Code', monospace;
 
     background: #1d1d1d;  
     
@@ -118,7 +117,7 @@ body {
 
     padding: 16px;
 
-    font-family: 'Oswald', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', 'Oswald', sans-serif;
     font-size: 15px;
     
     text-align: center;

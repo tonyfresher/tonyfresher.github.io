@@ -1,9 +1,13 @@
 'use strict';
 
 const path = require('path');
+const handlebars = require('handlebars');
 const generator = require('handlebars-generator');
 
+const registerHelpers = require('./register-helpers');
 const resumeData = require('./data/resume');
+
+registerHelpers(handlebars)
 
 const srcDirectory = path.join(__dirname, 'views');
 
