@@ -1,9 +1,14 @@
 'use strict';
 
 const path = require('path');
+const handlebars = require('handlebars');
 const generator = require('handlebars-generator');
 
 const resumeData = require('./data/resume');
+
+handlebars.registerHelper('multipleElements', array => {
+    return array.length > 1;
+});
 
 const srcDirectory = path.join(__dirname, 'views');
 
