@@ -18,8 +18,12 @@
 <main class="main">
     <div class="header">
         <h1 class="name">{{ profile.name }}</h1>
-        <span class="email">{{ connects.email }}</span>
-        <span class="phone">{{ connects.phone }}</span>
+        <a href="mailto:{{ connects.email }}" target="_blank" class="email">
+            {{ connects.email }}
+        </a>
+        <a href="tel:{{ connects.phone }}" target="_blank" class="phone">
+            {{ formatPhone connects.phone }}
+        </a>
     </div>
     <p class="about">{{ profile.about }}</p>
     <section class="education-block">

@@ -7,6 +7,7 @@ const express = require('express');
 const hbs = require('hbs');
 
 const controller = require('./controller/index');
+const registerHelpers = require('./register-helpers');
 
 const staticDirectory = path.join(__dirname, 'public');
 const viewsDirectory = path.join(__dirname, 'views');
@@ -23,9 +24,7 @@ app
     .get('/resume', controller.resume)
     .all('*', controller.error404);
 
-hbs.registerHelper('multipleElements', array => {
-    return array.length > 1;
-});
+registerHelpers(hbs);
 
 app.listen(process.env.PORT);
 
