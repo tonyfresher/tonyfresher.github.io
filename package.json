@@ -4,7 +4,7 @@
   "description": "Anton Fresher's web-profile",
   "main": "app/index.js",
   "scripts": {
-    "start": "node app/index.js",
+    "start": "node app/generate; node app/index.js",
     "generate": "node app/generate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
