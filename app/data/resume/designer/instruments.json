@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Sketch",
+        "progress": 0.65
+    },
+    {
+        "name": "Figma",
+        "progress": 0.35
+    },
+    {
+        "name": "HTML/CSS/JavaScript",
+        "progress": 0.85
+    }
+]

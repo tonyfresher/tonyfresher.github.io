@@ -1,41 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700');
-
-html {
-    font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
-    --background-color: #fefffe;
-    --text-color: #151515;
-    --subheader-text-color: #777;
-    --link-text-color: #256eff;
-}
-
-body {
-    margin: 0;
-
-    background: var(--background-color);
-    color: var(--text-color);
-}
-
-a {
-    color: var(--link-text-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 main {
-    margin: 32px 24px;
+}
+
+.header,
+.body {
+    padding: 32px 24px;
 }
 
 .header {
-    margin: 0 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: #151515;
+}
+
+.header__photo {
+    width: 90px;
+    height: 90px;
+
+    margin-right: 24px;
+
+    border-radius: 50%;
 }
 
 .name {
     display: block;
 
     margin: 0;
+
+    color: #fffffe;
 
     font-size: 32px;
     font-weight: 600;
@@ -60,6 +53,90 @@ main {
     font-weight: 400;
 
     white-space: pre-wrap;
+}
+
+@media screen and (min-width: 700px) {
+    .instruments-block .section-header,
+    .skills-block .section-header {
+        margin: 16px 0 2px;
+    }
+
+    .collapsable-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 12px;
+    }
+}
+
+.instrument,
+.skill {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin: 12px 0;
+}
+
+.instrument__name,
+.skill__name {
+    display: block;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill__details {
+    display: block;
+
+    color: var(--subheader-text-color);
+}
+
+.progress {
+    width: 160px;
+    height: 12px;
+
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.progress::-webkit-progress-bar,
+.progress::-webkit-progress-value {
+    border-radius: 16px;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: #e4e4e4;
+    box-shadow: 0 0 4px #00000025 inset;
+}
+
+.progress::-webkit-progress-value {
+    background: #256eff;
+}
+
+.education__university {
+    display: block;
+
+    width: max-content;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--text-color);
+}
+
+.education__speciality {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.education__period {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: var(--subheader-text-color);
 }
 
 .connects-block {
