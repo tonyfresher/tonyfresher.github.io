@@ -21,6 +21,5 @@ generator.registerPage('index', 'index', { staticBasePath: './app/public/'});
 generator.registerPage('resume', 'resume',
     Object.assign({ staticBasePath: './app/public/'}, resumeData));
 
-generator.generatePages(distDirectory, { extension: 'html' }, error => {
-    if (error) console.error(err.message);
-});
+generator.generatePages(distDirectory, { extension: 'html' },
+                        error => error && console.error(error));

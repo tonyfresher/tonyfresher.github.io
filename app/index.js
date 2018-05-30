@@ -6,7 +6,7 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 
-const controller = require('./controller/index');
+const route = require('./route');
 const registerHelpers = require('./register-helpers');
 
 const staticDirectory = path.join(__dirname, 'public');
@@ -18,13 +18,10 @@ app
     .use(express.static(staticDirectory))
 
     .set('view engine', 'hbs')
-    .set('views', viewsDirectory)
-
-    .get('/', controller.index)
-    .get('/resume', controller.resume)
-    .all('*', controller.error404);
+    .set('views', viewsDirectory);
 
 registerHelpers(hbs);
+route(app);
 
 app.listen(process.env.PORT);
 
