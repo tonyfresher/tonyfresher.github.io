@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ profile.name }} | Резюме</title>
+    <link rel="stylesheet" href="{{ staticBasePath }}resume/common.css">
+    <link rel="stylesheet" href="{{ staticBasePath }}resume/designer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="{{ profile.name }} | Резюме"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://tonyfresher.github.io/resume/designer">
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/17676963">
+    <meta property="og:image:width" content="460">
+    <meta property="og:image:height" content="460">
+</head>
+
+<body>
+<main class="main">
+    <div class="header">
+        <img class="header__photo" src="{{ staticBasePath }}images/me.jpg" alt="Photo">
+        <section class="header__info">
+            <h1 class="name">{{ profile.name }}</h1>
+            <a href="mailto:{{ connects.email }}" target="_blank" class="email">
+                {{ connects.email }}
+            </a>
+            <a href="tel:{{ connects.phone }}" target="_blank" class="phone">
+                {{ formatPhone connects.phone }}
+            </a>
+        </section>
+    </div>
+    <div class="body">
+        <p class="about">{{ profile.about }}</p>
+        <section class="skills-block">
+            <h2 class="section-header">Навыки</h2>
+            <div class="collapsable-grid">
+                {{#each skills }}
+                <div class="skill">
+                    <span class="skill__name">{{ name }}</span>
+                    <span class="skill__details">{{ details }}</span>
+                    <progress class="progress" value="{{ progress }}">
+                </div>
+                {{/each }}
+            </div>
+        </section>
+        <section class="instruments-block">
+            <h2 class="section-header">Инструменты</h2>
+            <div class="collapsable-grid">
+                {{#each instruments }}
+                <div class="instrument">
+                    <span class="instrument__name">{{ name }}</span>
+                    <progress class="progress" value="{{ progress }}">
+                </div>
+                {{/each }}
+            </div>
+        </section>
+        <section class="education-block">
+            <h2 class="section-header">Образование</h2>
+            <div class="{{#if (multipleElements education) }}collapsable-grid{{/if }}">
+                {{#each education }}
+                <div class="education">
+                    <a href="{{ link }}" class="education__university" target="_blank">{{ university }}</a>
+                    <span class="education__speciality">{{ speciality }}</span>
+                    <span class="education__period">{{ period }}</span>
+                </div>
+                {{/each }}
+            </div>
+        </section>
+        <section class="connects-block">
+            {{#each connects.social }}
+            <a href="{{ link }}" class="connect" target="_blank">{{ name }}</a>
+            {{/each }}
+        </section>
+    </div>
+</main>
+</body>
+
+</html>

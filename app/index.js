@@ -15,7 +15,8 @@ const viewsDirectory = path.join(__dirname, 'views');
 const app = express();
 
 app
-    .use(express.static(staticDirectory))
+    .use('/', express.static(staticDirectory))
+    .use('/resume', express.static(staticDirectory))
 
     .set('view engine', 'hbs')
     .set('views', viewsDirectory);
