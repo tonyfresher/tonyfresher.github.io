@@ -31,6 +31,9 @@
     </div>
     <div class="body">
         <p class="about">{{ profile.about }}</p>
+        <a href="../resume/developer" target="_blank" class="developer-resume-link">
+            А ещё я очень люблю писать код
+        </a>
         <section class="skills-block">
             <h2 class="section-header">Навыки</h2>
             <div class="collapsable-grid">
@@ -38,7 +41,7 @@
                 <div class="skill">
                     <span class="skill__name">{{ name }}</span>
                     <span class="skill__details">{{ details }}</span>
-                    <progress class="progress" value="{{ progress }}">
+                    <progress class="progress" value="{{ progress }}"></progress>
                 </div>
                 {{/each }}
             </div>

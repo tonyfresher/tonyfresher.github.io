@@ -1,61 +1,4 @@
-main {
-}
-
-.header,
-.body {
-    padding: 32px 24px;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    background: #151515;
-}
-
-.header__photo {
-    width: 90px;
-    height: 90px;
-
-    margin-right: 24px;
-
-    border-radius: 50%;
-}
-
-.name {
-    display: block;
-
-    margin: 0;
-
-    color: #fffffe;
-
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.email {
-    display: block;
-
-    color: var(--subheader-text-color);
-}
-
-.phone {
-    display: block;
-
-    color: var(--subheader-text-color);
-}
-
-.about {
-    margin: 0;
-
-    font-size: 15px;
-    font-weight: 400;
-
-    white-space: pre-wrap;
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
     .instruments-block .section-header,
     .skills-block .section-header {
         margin: 16px 0 2px;
@@ -63,8 +6,24 @@ main {
 
     .collapsable-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 12px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 809px) {
+    .collapsable-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+    .collapsable-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .collapsable-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -74,6 +33,8 @@ main {
     font-weight: 300;
 
     margin: 12px 0;
+
+    max-width: 250px;
 }
 
 .instrument__name,
@@ -104,45 +65,10 @@ main {
 }
 
 .progress::-webkit-progress-bar {
-    background-color: #e4e4e4;
+    background-color: #d6e3ff;
     box-shadow: 0 0 4px #00000025 inset;
 }
 
 .progress::-webkit-progress-value {
-    background: #256eff;
-}
-
-.education__university {
-    display: block;
-
-    width: max-content;
-
-    font-size: 18px;
-    font-weight: 500;
-
-    color: var(--text-color);
-}
-
-.education__speciality {
-    display: block;
-
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.education__period {
-    display: block;
-
-    font-size: 15px;
-    font-weight: 400;
-
-    color: var(--subheader-text-color);
-}
-
-.connects-block {
-    margin: 32px 0 0;    
-}
-
-.connect {
-    margin: 0 12px 0 0;
+    background: linear-gradient(to right,#256eff, #5598fc);
 }

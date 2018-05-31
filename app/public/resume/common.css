@@ -24,6 +24,87 @@ a:hover {
     text-decoration: underline;
 }
 
+.header,
+.body {
+    padding: 32px 24px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: #151515;
+}
+
+.header__photo {
+    width: 90px;
+    height: 90px;
+
+    margin-right: 24px;
+
+    border-radius: 50%;
+}
+
+.name {
+    display: block;
+
+    margin: 0;
+
+    color: #fffffe;
+
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.email {
+    display: block;
+
+    color: var(--subheader-text-color);
+}
+
+.phone {
+    display: block;
+
+    color: var(--subheader-text-color);
+}
+
+.about {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    white-space: pre-wrap;
+}
+
+.education__university {
+    display: block;
+
+    width: max-content;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--text-color);
+}
+
+.education__speciality {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.education__period {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: var(--subheader-text-color);
+}
+
 .section-header {
     margin: 16px 0 12px;
 
@@ -33,4 +114,12 @@ a:hover {
 
     padding-bottom: 6px;
     border-bottom: 2px solid var(--text-color);
+}
+
+.connects-block {
+    margin: 32px 0 0;    
+}
+
+.connect {
+    margin: 0 12px 0 0;
 }
