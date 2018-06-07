@@ -74,10 +74,6 @@ body {
     transition: color 0.2s;
 }
 
-.files__file-wrapper:first-child {
-    font-style: italic;
-}
-
 .files__file-wrapper:first-child,
 .files__file-wrapper:hover {
     border-bottom: 2px solid #4d77eb;
