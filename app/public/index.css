@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:200,500');
 
 html {
-    font-family: 'IBM Plex Sans Condensed', 'Oswald', sans-serif;
+    font-family: 'IBM Plex Sans', 'Oswald', sans-serif;
 }
 
 body {
@@ -32,15 +32,64 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
-    height: 100%;
+    margin: auto;
+
+    width: max-content;
+    min-height: 100%;
 
     animation: fade-in 0.8s ease-out;
 }
 
+.files {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    margin: 60px 16px 30px 0;
+
+    background: #ffffff08;
+
+    border-radius: 2px;
+}
+
+.files__file-wrapper {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid #ffffff00;
+}
+
+.files__filename {
+    margin: 12px;
+
+    color: #777;
+
+    font-size: 18px;
+
+    transition: color 0.2s;
+}
+
+.files__file-wrapper:first-child {
+    font-style: italic;
+}
+
+.files__file-wrapper:first-child,
+.files__file-wrapper:hover {
+    border-bottom: 2px solid #4d77eb;
+}
+
+.files__file-wrapper:first-child .files__filename,
+.files__file-wrapper:hover .files__filename {
+    color: #fff;
+}
+
 .code-sheet {
-    margin: auto;
+    flex-grow: 2;
 
     font-family: 'IBM Plex Mono', 'Fira Code', monospace;
     
@@ -115,6 +164,10 @@ body {
 
     padding: 16px;
 
+    width: 100%;
+
+    box-sizing: border-box;
+
     font-family: 'IBM Plex Sans Condensed', 'Oswald', sans-serif;
     font-size: 15px;
     
@@ -159,8 +212,14 @@ body {
     }
 }
 
-/* Mobile and Tablet */
+/* Mobile */
 @media screen and (max-width: 320px) {
+    .files__filename {
+        margin: 8px;
+
+        font-size: 9px;
+    }
+    
     .code-sheet {
         font-size: 10px;
     }
@@ -170,8 +229,14 @@ body {
     }
 }
 
-/* Mobile and Tablet */
+/* Tablet */
 @media screen and (min-width: 321px) and (max-width: 767px) {
+    .files__filename {
+        margin: 10px;
+
+        font-size: 11px;
+    }
+
     .code-sheet {
         font-size: 12px;
     }
