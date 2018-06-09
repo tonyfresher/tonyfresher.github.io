@@ -25,8 +25,6 @@ body {
     height: 100vh;
 
     background: #1a1a1a;
-    /* background: linear-gradient(90deg, #29e1b3, #aafbd7);
-    animation: gradient-animation 10s linear 1.5s infinite; */
 }
 
 .main {
@@ -40,6 +38,8 @@ body {
     min-height: 100%;
 
     animation: fade-in 0.8s ease-out;
+
+    box-sizing: border-box;
 }
 
 .files {
@@ -76,7 +76,7 @@ body {
 
 .files__file-wrapper:first-child,
 .files__file-wrapper:hover {
-    border-bottom: 2px solid #4d77eb;
+    border-bottom: 2px solid #35a7ff;
 }
 
 .files__file-wrapper:first-child .files__filename,
@@ -116,7 +116,7 @@ body {
 }
 
 .code.func {
-    color: #4d77eb;
+    color: #35a7ff;
 }
 
 .code.parath {
@@ -148,7 +148,7 @@ body {
 .link:hover {
     font-style: italic;
 
-    color: #4e78ee;
+    color: #35a7ff;
 
     text-decoration: underline;
 }
@@ -186,16 +186,6 @@ body {
 
     font-weight: 200;
     letter-spacing: .3ch;
-}
-
-@keyframes gradient-animation {
-    from {
-        filter: hue-rotate(0deg)
-    }
-
-    to {
-        filter: hue-rotate(360deg)
-    }
 }
 
 @keyframes fade-in {
