@@ -4,7 +4,6 @@ require('dotenv').config({ path: `${__dirname}/.env` });
 
 const path = require('path');
 const express = require('express');
-const pug = require('pug');
 
 const route = require('./route');
 

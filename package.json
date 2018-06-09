@@ -21,6 +21,8 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
+    "jstransformer-markdown-it": "^2.1.0",
+    "markdown-it-deflist": "^2.0.3",
     "pug": "^2.0.3"
   }
 }

@@ -6,16 +6,16 @@ html(lang="ru")
     title #{profile.name} | Резюме
     link(rel="stylesheet" href=`${publicDir || ""}/resume/common.css`)
     link(rel="stylesheet" href=`${publicDir || ""}/resume/designer.css`)
-    meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(property="og:title" content="#{profile.name} | Резюме")
     meta(property="og:type" content="website")
     meta(property="og:url" content="http://tonyfresher.github.io/resume/designer")
     meta(property="og:image" content="https://avatars0.githubusercontent.com/u/17676963")
     meta(property="og:image:width" content="460")
     meta(property="og:image:height" content="460")
+    include ../metrica
 
   body
-    main.main
+    main
       include header
 
       .body
