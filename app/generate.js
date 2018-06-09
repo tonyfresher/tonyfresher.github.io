@@ -1,28 +1,30 @@
 'use strict';
 
+const fs = require('fs');
 const path = require('path');
-const handlebars = require('handlebars');
-const generator = require('handlebars-generator');
+const pug = require('pug');
 
-const registerHelpers = require('./register-helpers');
 const developerResumeData = require('./data/resume/developer');
 const designerResumeData = require('./data/resume/designer');
 
-registerHelpers(handlebars)
-
-const srcDirectory = path.join(__dirname, 'views');
+const srcDir = path.join(__dirname, 'views');
 
 const splitted = __dirname.split(path.sep)
 splitted.pop()
-const distDirectory = splitted.join(path.sep);
+const distDir = splitted.join(path.sep);
 
-generator.registerSourceDirectory(srcDirectory, { extension: 'hbs' });
+generate('index');
+generate('resume/developer', developerResumeData);
+generate('resume/designer', designerResumeData);
 
-generator.registerPage('index', 'index', { staticBasePath: './app/public/'});
-generator.registerPage('resume/developer', 'resume/developer',
-    Object.assign({ staticBasePath: '../app/public/'}, developerResumeData));
-generator.registerPage('resume/designer', 'resume/designer',
-    Object.assign({ staticBasePath: '../app/public/'}, designerResumeData));
+function generate(name, locals) {
+    let stepsBackCount = name.split('/').length - 1;
+    let publicDir = stepsBackCount === 0
+        ? './app/public'
+        : `${'../'.repeat(stepsBackCount)}app/public`;
 
-generator.generatePages(distDirectory, { extension: 'html' },
-                        error => error && console.error(error));
+    let page = pug.renderFile(path.join(srcDir, `${name}.pug`), 
+        Object.assign({ publicDir, pretty: true }, locals));
+
+    fs.writeFileSync(path.join(distDir, `${name}.html`), page);
+}

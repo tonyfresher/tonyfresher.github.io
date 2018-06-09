@@ -1,0 +1,154 @@
+doctype html
+html(lang="ru")
+
+  head
+    meta(charset="utf-8")
+    title Hello World! — Anton Fresher's Pages
+    link(rel="icon" type="image/png" href=`${publicDir || ""}/images/favicon.png`)
+    link(rel="stylesheet" href=`${publicDir || ""}/index.css`)
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content="Anton Fresher's pages")
+    meta(property="og:title" content="Hello World!")
+    meta(property="og:type" content="profile")
+    meta(property="og:url" content="http://tonyfresher.github.io/")
+    meta(property="og:image" content="https://avatars0.githubusercontent.com/u/17676963")
+    meta(property="og:image:width" content="460")
+    meta(property="og:image:height" content="460")
+    include metrica
+
+  body
+    .background-gradient
+
+    main.main
+      .files
+        .files__file-wrapper
+          span.files__filename HelloWorld.swift
+        a.files__file-wrapper(href="./resume/developer")
+          span.files__filename developer.html
+        a.files__file-wrapper(href="./resume/designer")
+          span.files__filename designer.html
+
+      .code-sheet
+        .code-line
+          span.code.func hiThere
+          span.code  
+          span.code.div {
+        .code-line
+          span.code     
+          span.code.kw var
+          span.code  
+          span.code.var me
+          span.code  
+          span.code.div =
+          span.code  
+          span.code.class AntonFresher
+          span.code.parath (
+          span.code.parath )
+        .code-line
+          span.code     
+          span.code.var me
+          span.code.div .
+          span.code.prop education
+          span.code  
+          span.code.div =
+          span.code  
+          span.code.class Student
+          span.code.parath (
+          span.code.kw of:
+          span.code  
+          span.code.class UrFU
+          span.code.div .
+          a.code.link.prop(href="http://math-mech.ru" target="_blank") mathMech
+          span.code.parath )
+        .code-line
+          span.code     
+          span.code.var me
+          span.code.div .
+          span.code.prop interests
+          span.code  
+          span.code.div =
+          span.code  
+          span.code.div [
+        .code-line
+          span.code         
+          span.code.str 'dev'
+          span.code.div ,
+          span.code  
+          span.code.str 'design'
+          span.code.div ,
+          span.code  
+          span.code.str 'math'
+          span.code.div ,
+          span.code  
+          span.code.str 'data science'
+        .code-line
+          span.code     
+          span.code.div ]
+        .code-line
+          span.code  
+        .code-line
+          span.code     
+          span.code.var me
+        .code-line
+          span.code         
+          span.code.div .
+          span.code.func hostCode
+          span.code.parath (
+          span.code.kw using:
+          span.code  
+          span.code.class Links
+          span.code.div .
+          a.link.code.prop(href="http://github.com/tonyfresher" target="_blank") gitHub
+          span.code.parath )
+        .code-line
+          span.code         
+          span.code.div .
+          span.code.func postGraphics
+          span.code.parath (
+          span.code.kw on:
+          span.code  
+          span.code.class Links
+          span.code.div .
+          a.link.code.prop(href="http://behance.net/tonyfresher" target="_blank") behance
+          span.code.parath )
+        .code-line
+          span.code         
+          span.code.div .
+          span.code.func uploadPhotos
+          span.code.parath (
+          span.code.kw to:
+          span.code  
+          span.code.class Links
+          span.code.div .
+          a.link.code.prop(href="http://instagram.com/tonyfresher" target="_blank") instagram
+          span.code.parath )
+        .code-line
+          span.code         
+          span.code.div .
+          span.code.func getInTouch
+          span.code.parath (
+          span.code.kw on:
+          span.code  
+          span.code.class Links
+          span.code.div .
+          a.link.code.prop(href="http://t.me/tonyfresher" target="_blank") telegram
+          span.code.parath )
+        .code-line
+          span.code         
+          span.code.div .
+          span.code.func getInTouch
+          span.code.parath (
+          span.code.kw on:
+          span.code  
+          span.code.class Links
+          span.code.div .
+          a.link.code.prop(href="http://vk.com/tonyfresher" target="_blank") vk
+          span.code.parath )
+        span.code-line
+          span.code.div }
+
+      footer.footer
+        span.footer__name Anton Fresher
+        span.footer__copy
+          script(type="text/javascript").
+            document.write(`© ${new Date().getFullYear()}`);

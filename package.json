@@ -4,8 +4,8 @@
   "description": "Anton Fresher's web-profile",
   "main": "app/index.js",
   "scripts": {
-    "start": "node app/generate; node app/index.js",
-    "generate": "node app/generate.js",
+    "start": "node app/generate; node app/index",
+    "generate": "node app/generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,8 +21,6 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "handlebars": "^4.0.11",
-    "handlebars-generator": "^3.2.2",
-    "hbs": "^4.0.1"
+    "pug": "^2.0.3"
   }
 }

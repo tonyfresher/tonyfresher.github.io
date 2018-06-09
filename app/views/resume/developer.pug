@@ -1,0 +1,58 @@
+doctype html
+html(lang="ru")
+
+  head
+    meta(charset="utf-8")
+    title #{profile.name} | Резюме
+    link(rel="stylesheet" href=`${publicDir || ""}/resume/common.css`)
+    link(rel="stylesheet" href=`${publicDir || ""}/resume/developer.css`)
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(property="og:title" content="#{profile.name} | Резюме")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://tonyfresher.github.io/resume/developer")
+    meta(property="og:image" content="https://avatars0.githubusercontent.com/u/17676963")
+    meta(property="og:image:width" content="460")
+    meta(property="og:image:height" content="460")
+
+  body
+    main.main
+      include header
+
+      .body
+        p.about #{profile.about}
+
+        section.education-block
+          h2.section-header Образование
+          div(class={"collapsable-grid": education.length > 1})
+            each item in education
+              .education
+                a.education__university(href=item.link, target="_blank") #{item.university}
+                span.education__speciality #{item.speciality}
+                span.education__period #{item.period}
+
+        section.jobs-block
+          h2.section-header Опыт
+          .jobs(class={"collapsable-grid": jobs.length > 1})
+            each item in jobs
+              .job
+                a.job__company(href=item.link target="_blank") #{item.company}
+                span.job__position #{item.position}
+                span.job__period #{item.period}
+                span.job__description #{item.description}
+
+        section.technologies-block
+          h2.section-header Языки/технологии
+          .collapsable-grid
+            each item in technologies
+              .technology
+                span.technology__name #{item.name}
+                span.technology__courses #{item.courses}
+                if item['project-links']
+                  each link in item['project-links']
+                    a.technology__project-link(href=`https://${link.path}${link.accent}` target="_blank")
+                      span.project-link__path #{link.path}
+                      span #{link.accent}
+
+        section.connects-block
+          each item in connects.social
+            a.connect(href=item.link target="_blank") #{item.name}
