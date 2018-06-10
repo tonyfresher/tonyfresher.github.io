@@ -1,13 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext');
 
 html {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     margin: 0;
+
+    background: #fa6149;
 }
 
 main {
-    margin: 24px;
+    margin: 48px 24px 24px;
+    padding: 24px;
+
+    background: #fff;
+
+    box-shadow: 0 2px 24px #0000004f;
+
+    /* border: 16px solid #fa6149; */
+
+    color: #151515;
+}
+
+dt {
+}
+
+dd {
+    margin: 0 0 4px 0;
+
+    font-size: 14px;
+    color: #777;
+}
+
+ul {
+    padding: 8px 24px 8px 36px;
+    max-width: 100%;
+    width: max-content;
+
+    box-sizing: border-box;
+    border: 3px solid #fa6149;
+
+    list-style-type: upper-roman;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #ddd;
 }
