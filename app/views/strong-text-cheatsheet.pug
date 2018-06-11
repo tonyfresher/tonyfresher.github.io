@@ -6,6 +6,7 @@ html(lang="ru")
     title Шпаргалка сильного текста
     link(rel="icon" type="image/png" href=`${publicDir || ""}/assets/dragon.png`)
     link(rel="stylesheet" href=`${publicDir || ""}/strong-text-cheatsheet.css`)
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="description" content="Шпаргалка сильного текста по «Пиши, сокращай»")
     meta(property="og:title" content="Шпаргалка сильного текста")
     meta(property="og:type" content="website")
@@ -14,4 +15,6 @@ html(lang="ru")
 
   body
     main
-      include:markdown-it(plugins=['markdown-it-deflist']) ../data/strong-text-cheatsheet.md
+      include:markdown-it(
+        plugins=['markdown-it-deflist', 'markdown-it-mark', ['markdown-it-container', 'important'], ['markdown-it-container', 'block']]
+        ) ../data/strong-text-cheatsheet.md

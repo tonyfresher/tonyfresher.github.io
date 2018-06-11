@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700&subset=cyrillic');
 
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
@@ -18,34 +18,78 @@ main {
 
     box-shadow: 0 2px 24px #0000004f;
 
-    /* border: 16px solid #fa6149; */
+    border-radius: 8px;
 
     color: #151515;
+}
+
+main * {
+    max-width: 100%;
+    width: max-content;
+    box-sizing: border-box;
+}
+
+h2 {
+    /* margin: 1.3em 0 0.83em 0; */
 }
 
 dt {
 }
 
 dd {
-    margin: 0 0 4px 0;
+    margin: 0 0 0.5em 0;
 
-    font-size: 14px;
+    font-size: 0.9em;
     color: #777;
 }
 
-ul {
-    padding: 8px 24px 8px 36px;
+.important {
     max-width: 100%;
     width: max-content;
-
     box-sizing: border-box;
-    border: 3px solid #fa6149;
+
+    border: 6px solid #fa6149;
+
+    font-weight: 500;
+}
+
+ul {
+    padding: 0 2.5em 0 2.5em;
+    margin: 1em 0 1em;
 
     list-style-type: upper-roman;
 }
 
+li {
+    padding-bottom: 4px;
+}
+
 hr {
+    margin: 1em 0 1em 0;
+
     border: 0;
-    height: 2px;
-    background: #ddd;
+    height: 0;
+
+    width: 100%;
+
+    border-bottom: 2px dashed #ddd;
+}
+
+a {
+    color: #356bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media screen and (max-width: 320px) {
+    main {
+        margin: 24px 8px 8px;
+        padding: 16px;
+
+        font-size: 12px;
+    }
 }
