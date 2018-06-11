@@ -14,6 +14,8 @@ main {
     margin: 48px 24px 24px;
     padding: 24px;
 
+    max-width: 620px;
+
     background: #fff;
 
     box-shadow: 0 2px 24px #0000004f;
@@ -29,11 +31,19 @@ main * {
     box-sizing: border-box;
 }
 
-.block {
-    margin: 1.4em 0;
+/* h1::before {
+    content: '§ ';
+} */
+
+h1 {
+    display: inline;
+
+    border-bottom: 4px solid #fa6149;
+    margin: 0.5em 0 0.8em;
 }
 
-dt {
+.block {
+    margin: 1.4em 0;
 }
 
 dd {
@@ -82,12 +92,23 @@ a:hover {
     text-decoration: underline;
 }
 
+mark {
+    /* background: #ff452427;
+    padding: 0 1px;
+    color: #222; */
+
+    background: #fa614900;
+    /* color: #fa6149; */
+
+    font-weight: 500;
+}
+
 /* Mobile */
 @media screen and (max-width: 425px) {
     main {
         margin: 24px 12px 12px;
         padding: 16px;
 
-        font-size: 12px;
+        font-size: 13px;
     }
 }
