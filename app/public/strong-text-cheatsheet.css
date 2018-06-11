@@ -64,14 +64,18 @@ dd {
 }
 
 ul {
-    padding: 0 2.5em;
+    padding: 0 1.5em;
     margin: 1em 0 1em;
 
-    list-style-type: upper-roman;
+    list-style-type: none;
 }
 
 li {
-    padding-bottom: 4px;
+    padding-bottom: 8px;
+}
+
+li:last-child {
+    padding-bottom: 2px;
 }
 
 hr {
@@ -93,14 +97,30 @@ a:hover {
 }
 
 mark {
-    /* background: #ff452427;
-    padding: 0 1px;
-    color: #222; */
-
     background: #fa614900;
-    /* color: #fa6149; */
 
     font-weight: 500;
+}
+
+table {
+    display: block;
+    margin: 1em 0;
+
+    font-size: 0.9em;
+}
+
+thead {
+    display: block;
+    border-spacing: 0;
+}
+
+th:empty {
+    padding: 0;
+    height: 0;
+}
+
+td {
+    min-width: 24px;
 }
 
 /* Mobile */
