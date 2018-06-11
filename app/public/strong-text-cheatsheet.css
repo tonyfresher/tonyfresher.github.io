@@ -29,8 +29,8 @@ main * {
     box-sizing: border-box;
 }
 
-h2 {
-    /* margin: 1.3em 0 0.83em 0; */
+.block {
+    margin: 1.4em 0;
 }
 
 dt {
@@ -54,7 +54,7 @@ dd {
 }
 
 ul {
-    padding: 0 2.5em 0 2.5em;
+    padding: 0 2.5em;
     margin: 1em 0 1em;
 
     list-style-type: upper-roman;
@@ -65,8 +65,6 @@ li {
 }
 
 hr {
-    margin: 1em 0 1em 0;
-
     border: 0;
     height: 0;
 
@@ -85,9 +83,9 @@ a:hover {
 }
 
 /* Mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
     main {
-        margin: 24px 8px 8px;
+        margin: 24px 12px 12px;
         padding: 16px;
 
         font-size: 12px;
