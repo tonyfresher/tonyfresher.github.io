@@ -21,20 +21,20 @@ html(lang="ru")
 
     main
       .ide-wrapper
-        .files
-          .files__file-wrapper
-            span.files__filename HelloWorld.swift
-          a.files__file-wrapper(href="./resume/developer")
-            span.files__filename developer.html
-          a.files__file-wrapper(href="./resume/designer")
-            span.files__filename designer.html
+        .pages
+          .pages__file-wrapper
+            span.pages__name HelloWorld.swift
+          a.pages__file-wrapper(href="./resume/developer")
+            span.pages__name developer.html
+          a.pages__file-wrapper(href="./resume/designer")
+            span.pages__name designer.html
 
-          input.show-more__checkbox(type="checkbox", id="files__show-more-checkbox")
+          input.show-more__checkbox(type="checkbox", id="pages__show-more-checkbox")
           button.show-more
-            label.files__filename.show-more__label(for="files__show-more-checkbox") ...
+            label.pages__name.show-more__label(for="pages__show-more-checkbox") ...
 
-          a.files__file-wrapper(href="./cheatsheets/strong-text")
-            span.files__filename strong-text-cheatsheet.md
+          a.pages__file-wrapper(href="./cheatsheets/strong-text")
+            span.pages__name cheatsheets/strong-text.md
 
         .code-sheet
           .code-line

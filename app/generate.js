@@ -16,7 +16,7 @@ const distDir = splitted.join(path.sep);
 generate('index');
 generate('resume/developer', developerResumeData);
 generate('resume/designer', designerResumeData);
-generate('strong-text-cheatsheet');
+generate('cheatsheets/strong-text');
 
 function generate(name, locals) {
     let stepsBackCount = name.split('/').length - 1;

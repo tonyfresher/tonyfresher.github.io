@@ -16,7 +16,7 @@ exports.designerResume = (req, res) => {
 };
 
 exports.strongTextCheatsheet = (req, res) => {
-    res.render('strong-text-cheatsheet');
+    res.render('cheatsheets/strong-text');
 };
 
 exports.error404 = (req, res) => {

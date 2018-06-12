@@ -5,16 +5,16 @@ html(lang="ru")
     meta(charset="utf-8")
     title Шпаргалка сильного текста
     link(rel="icon" type="image/png" href=`${publicDir || ""}/assets/dragon.png`)
-    link(rel="stylesheet" href=`${publicDir || ""}/strong-text-cheatsheet.css`)
+    link(rel="stylesheet" href=`${publicDir || ""}/cheatsheets/strong-text.css`)
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(name="description" content="Шпаргалка сильного текста по «Пиши, сокращай»")
+    meta(name="description" content="Краткий пересказ «Пиши, сокращай»")
     meta(property="og:title" content="Шпаргалка сильного текста")
     meta(property="og:type" content="website")
-    meta(property="og:url" content="http://tonyfresher.github.io/strong-text-cheatsheet")
-    include metrica
+    meta(property="og:url" content="http://tonyfresher.github.io/cheatsheets/strong-text")
+    include ../metrica
 
   body
     main
       include:markdown-it(
         plugins=['markdown-it-deflist', 'markdown-it-mark', ['markdown-it-container', 'important'], ['markdown-it-container', 'block']]
-        ) ../data/strong-text-cheatsheet.md
+        ) ../../data/cheatsheets/strong-text.md

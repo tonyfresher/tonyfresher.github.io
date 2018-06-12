@@ -12,7 +12,7 @@ module.exports = app => {
         .get('/resume/developer', controller.developerResume)
         .get('/resume/designer', controller.designerResume)
 
-        .get('/strong-text-cheatsheet', controller.strongTextCheatsheet)
+        .get('/cheatsheets/strong-text', controller.strongTextCheatsheet)
 
         .all('*', controller.error404);
 }

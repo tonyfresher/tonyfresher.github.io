@@ -14,7 +14,6 @@ const app = express();
 
 app
     .use('/', express.static(staticDirectory))
-    .use('/resume', express.static(staticDirectory))
 
     .set('view engine', 'pug')
     .set('views', viewsDirectory);
