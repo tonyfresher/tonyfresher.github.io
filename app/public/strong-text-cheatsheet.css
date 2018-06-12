@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&subset=cyrillic');
 
 html {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -105,8 +105,6 @@ mark {
 table {
     display: block;
     margin: 1em 0;
-
-    font-size: 0.9em;
 }
 
 thead {
@@ -129,6 +127,12 @@ td {
         margin: 24px 12px 12px;
         padding: 16px;
 
-        font-size: 13px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    table {
+        font-size: 0.84em;
     }
 }

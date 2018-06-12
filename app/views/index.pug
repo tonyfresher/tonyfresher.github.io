@@ -20,132 +20,140 @@ html(lang="ru")
     .background-gradient
 
     main
-      .files
-        .files__file-wrapper
-          span.files__filename HelloWorld.swift
-        a.files__file-wrapper(href="./resume/developer")
-          span.files__filename developer.html
-        a.files__file-wrapper(href="./resume/designer")
-          span.files__filename designer.html
+      .ide-wrapper
+        .files
+          .files__file-wrapper
+            span.files__filename HelloWorld.swift
+          a.files__file-wrapper(href="./resume/developer")
+            span.files__filename developer.html
+          a.files__file-wrapper(href="./resume/designer")
+            span.files__filename designer.html
 
-      .code-sheet
-        .code-line
-          span.code.func hiThere
-          span.code  
-          span.code.div {
-        .code-line
-          span.code     
-          span.code.kw var
-          span.code  
-          span.code.var me
-          span.code  
-          span.code.div =
-          span.code  
-          span.code.class AntonFresher
-          span.code.parath (
-          span.code.parath )
-        .code-line
-          span.code     
-          span.code.var me
-          span.code.div .
-          span.code.prop education
-          span.code  
-          span.code.div =
-          span.code  
-          span.code.class Student
-          span.code.parath (
-          span.code.kw of:
-          span.code  
-          span.code.class UrFU
-          span.code.div .
-          a.code.link.prop(href="http://math-mech.ru" target="_blank") mathMech
-          span.code.parath )
-        .code-line
-          span.code     
-          span.code.var me
-          span.code.div .
-          span.code.prop interests
-          span.code  
-          span.code.div =
-          span.code  
-          span.code.div [
-        .code-line
-          span.code         
-          span.code.str 'dev'
-          span.code.div ,
-          span.code  
-          span.code.str 'design'
-          span.code.div ,
-          span.code  
-          span.code.str 'math'
-          span.code.div ,
-          span.code  
-          span.code.str 'data science'
-        .code-line
-          span.code     
-          span.code.div ]
-        .code-line
-          span.code  
-        .code-line
-          span.code     
-          span.code.var me
-        .code-line
-          span.code         
-          span.code.div .
-          span.code.func hostCode
-          span.code.parath (
-          span.code.kw using:
-          span.code  
-          span.code.class Links
-          span.code.div .
-          a.link.code.prop(href="http://github.com/tonyfresher") gitHub
-          span.code.parath )
-        .code-line
-          span.code         
-          span.code.div .
-          span.code.func postGraphics
-          span.code.parath (
-          span.code.kw on:
-          span.code  
-          span.code.class Links
-          span.code.div .
-          a.link.code.prop(href="http://behance.net/tonyfresher") behance
-          span.code.parath )
-        .code-line
-          span.code         
-          span.code.div .
-          span.code.func uploadPhotos
-          span.code.parath (
-          span.code.kw to:
-          span.code  
-          span.code.class Links
-          span.code.div .
-          a.link.code.prop(href="http://instagram.com/tonyfresher") instagram
-          span.code.parath )
-        .code-line
-          span.code         
-          span.code.div .
-          span.code.func getInTouch
-          span.code.parath (
-          span.code.kw on:
-          span.code  
-          span.code.class Links
-          span.code.div .
-          a.link.code.prop(href="http://t.me/tonyfresher") telegram
-          span.code.parath )
-        .code-line
-          span.code         
-          span.code.div .
-          span.code.func getInTouch
-          span.code.parath (
-          span.code.kw on:
-          span.code  
-          span.code.class Links
-          span.code.div .
-          a.link.code.prop(href="http://vk.com/tonyfresher") vk
-          span.code.parath )
-        span.code-line
-          span.code.div }
+          input.show-more__checkbox(type="checkbox", id="files__show-more-checkbox")
+          button.show-more
+            label.files__filename.show-more__label(for="files__show-more-checkbox") ...
+
+          a.files__file-wrapper(href="./cheatsheets/strong-text")
+            span.files__filename strong-text-cheatsheet.md
+
+        .code-sheet
+          .code-line
+            span.code.func hiThere
+            span.code  
+            span.code.div {
+          .code-line
+            span.code     
+            span.code.kw var
+            span.code  
+            span.code.var me
+            span.code  
+            span.code.div =
+            span.code  
+            span.code.class AntonFresher
+            span.code.parath (
+            span.code.parath )
+          .code-line
+            span.code     
+            span.code.var me
+            span.code.div .
+            span.code.prop education
+            span.code  
+            span.code.div =
+            span.code  
+            span.code.class Student
+            span.code.parath (
+            span.code.kw of:
+            span.code  
+            span.code.class UrFU
+            span.code.div .
+            a.code.link.prop(href="http://math-mech.ru" target="_blank") mathMech
+            span.code.parath )
+          .code-line
+            span.code     
+            span.code.var me
+            span.code.div .
+            span.code.prop interests
+            span.code  
+            span.code.div =
+            span.code  
+            span.code.div [
+          .code-line
+            span.code         
+            span.code.str 'dev'
+            span.code.div ,
+            span.code  
+            span.code.str 'design'
+            span.code.div ,
+            span.code  
+            span.code.str 'math'
+            span.code.div ,
+            span.code  
+            span.code.str 'data science'
+          .code-line
+            span.code     
+            span.code.div ]
+          .code-line
+            span.code  
+          .code-line
+            span.code     
+            span.code.var me
+          .code-line
+            span.code         
+            span.code.div .
+            span.code.func hostCode
+            span.code.parath (
+            span.code.kw using:
+            span.code  
+            span.code.class Links
+            span.code.div .
+            a.link.code.prop(href="http://github.com/tonyfresher") gitHub
+            span.code.parath )
+          .code-line
+            span.code         
+            span.code.div .
+            span.code.func postGraphics
+            span.code.parath (
+            span.code.kw on:
+            span.code  
+            span.code.class Links
+            span.code.div .
+            a.link.code.prop(href="http://behance.net/tonyfresher") behance
+            span.code.parath )
+          .code-line
+            span.code         
+            span.code.div .
+            span.code.func uploadPhotos
+            span.code.parath (
+            span.code.kw to:
+            span.code  
+            span.code.class Links
+            span.code.div .
+            a.link.code.prop(href="http://instagram.com/tonyfresher") instagram
+            span.code.parath )
+          .code-line
+            span.code         
+            span.code.div .
+            span.code.func getInTouch
+            span.code.parath (
+            span.code.kw on:
+            span.code  
+            span.code.class Links
+            span.code.div .
+            a.link.code.prop(href="http://t.me/tonyfresher") telegram
+            span.code.parath )
+          .code-line
+            span.code         
+            span.code.div .
+            span.code.func getInTouch
+            span.code.parath (
+            span.code.kw on:
+            span.code  
+            span.code.class Links
+            span.code.div .
+            a.link.code.prop(href="http://vk.com/tonyfresher") vk
+            span.code.parath )
+          span.code-line
+            span.code.div }
 
       footer.footer
         span.footer__name Anton Fresher
