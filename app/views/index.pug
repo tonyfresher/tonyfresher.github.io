@@ -74,7 +74,7 @@ html(lang="ru")
             span.code  
             span.code.class UrFU
             span.code.div .
-            a.code.link.prop(href="http://math-mech.ru" target="_blank") mathMech
+            a.code.prop.prop_link(href="http://math-mech.ru" target="_blank") mathMech
             span.code.parath )
           .code-line
             span.code     
@@ -107,19 +107,31 @@ html(lang="ru")
             span.code.func print
             span.code.parath (
             span.code.var self
+            span.code.div .
+            span.code.prop links
             span.code.parath )
           span.code-line
             span.code.div }
 
-      footer.footer
-        .links
+      .links
           a.link(href="http://github.com/tonyfresher") gitHub
           a.link(href="http://behance.net/tonyfresher") behance
-          a.link(href="http://instagram.com/tonyfresher") instagram
           a.link(href="http://t.me/tonyfresher") telegram
           a.link(href="http://vk.com/tonyfresher") vkontakte
+          a.link(href="http://instagram.com/tonyfresher") instagram
 
+      footer.footer
         span.footer__name Anton Fresher
-        span.footer__copy
-          script(type="text/javascript").
-            document.write(`© ${new Date().getFullYear()}`);
+        .footer__copy
+          span
+            script(type="text/javascript").
+              document.write(new Date().getFullYear().toString().charAt(0));
+          span
+            script(type="text/javascript").
+              document.write(new Date().getFullYear().toString().charAt(1));
+          span
+            script(type="text/javascript").
+              document.write(new Date().getFullYear().toString().charAt(2));
+          span
+            script(type="text/javascript").
+              document.write(new Date().getFullYear().toString().charAt(3));
