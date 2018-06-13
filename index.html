@@ -47,32 +47,34 @@
   <body>
     <div class="background-gradient"></div>
     <main>
-      <div class="ide-wrapper">
+      <div class="ide">
+        <div class="ide__top-panel">
+          <div class="top-panel__buttons-wrapper">
+            <div class="top-panel__button"></div>
+            <div class="top-panel__button"></div>
+            <div class="top-panel__button"></div>
+          </div><span class="top-panel__title">HelloWorld.swift — Anton Fresher's Pages</span>
+        </div>
         <div class="pages">
-          <div class="pages__file-wrapper"><span class="pages__name">HelloWorld.swift</span></div><a class="pages__file-wrapper" href="./resume/developer"><span class="pages__name">developer.html</span></a><a class="pages__file-wrapper" href="./resume/designer"><span class="pages__name">designer.html</span></a>
+          <div class="pages__name">HelloWorld.swift</div><a class="pages__name" href="./resume/developer">developer.html</a><a class="pages__name" href="./resume/designer">designer.html</a>
           <input class="show-more__checkbox" type="checkbox" id="pages__show-more-checkbox">
-          <button class="show-more">
-            <label class="pages__name show-more__label" for="pages__show-more-checkbox">...</label>
-          </button><a class="pages__file-wrapper" href="./cheatsheets/strong-text"><span class="pages__name">cheatsheets/strong-text.md</span></a>
+          <label class="pages__name show-more" for="pages__show-more-checkbox">...</label><a class="pages__name" href="./cheatsheets/strong-text">cheatsheets/strong-text.md</a>
         </div>
         <div class="code-sheet">
           <div class="code-line"><span class="code func">hiThere</span><span class="code"> </span><span class="code div">{</span></div>
-          <div class="code-line"><span class="code">    </span><span class="code kw">var</span><span class="code"> </span><span class="code var">me</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code class">AntonFresher</span><span class="code parath">(</span><span class="code parath">)</span></div>
-          <div class="code-line"><span class="code">    </span><span class="code var">me</span><span class="code div">.</span><span class="code prop">education</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code class">Student</span><span class="code parath">(</span><span class="code kw">of:</span><span class="code"> </span><span class="code class">UrFU</span><span class="code div">.</span><a class="code link prop" href="http://math-mech.ru" target="_blank">mathMech</a><span class="code parath">)</span></div>
-          <div class="code-line"><span class="code">    </span><span class="code var">me</span><span class="code div">.</span><span class="code prop">interests</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code div">[</span></div>
+          <div class="code-line"><span class="code">    </span><span class="code kw">var</span><span class="code"> </span><span class="code var">self</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code class">AntonFresher</span><span class="code parath">(</span><span class="code parath">)</span></div>
+          <div class="code-line"><span class="code">    </span><span class="code var">self</span><span class="code div">.</span><span class="code prop">education</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code class">Student</span><span class="code parath">(</span><span class="code kw">of:</span><span class="code"> </span><span class="code class">UrFU</span><span class="code div">.</span><a class="code link prop" href="http://math-mech.ru" target="_blank">mathMech</a><span class="code parath">)</span></div>
+          <div class="code-line"><span class="code">    </span><span class="code var">self</span><span class="code div">.</span><span class="code prop">interests</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code div">[</span></div>
           <div class="code-line"><span class="code">        </span><span class="code str">'dev'</span><span class="code div">,</span><span class="code"> </span><span class="code str">'design'</span><span class="code div">,</span><span class="code"> </span><span class="code str">'math'</span><span class="code div">,</span><span class="code"> </span><span class="code str">'data science'</span></div>
           <div class="code-line"><span class="code">    </span><span class="code div">]</span></div>
           <div class="code-line"><span class="code"> </span></div>
-          <div class="code-line"><span class="code">    </span><span class="code var">me</span></div>
-          <div class="code-line"><span class="code">        </span><span class="code div">.</span><span class="code func">hostCode</span><span class="code parath">(</span><span class="code kw">using:</span><span class="code"> </span><span class="code class">Links</span><span class="code div">.</span><a class="link code prop" href="http://github.com/tonyfresher">gitHub</a><span class="code parath">)</span></div>
-          <div class="code-line"><span class="code">        </span><span class="code div">.</span><span class="code func">postGraphics</span><span class="code parath">(</span><span class="code kw">on:</span><span class="code"> </span><span class="code class">Links</span><span class="code div">.</span><a class="link code prop" href="http://behance.net/tonyfresher">behance</a><span class="code parath">)</span></div>
-          <div class="code-line"><span class="code">        </span><span class="code div">.</span><span class="code func">uploadPhotos</span><span class="code parath">(</span><span class="code kw">to:</span><span class="code"> </span><span class="code class">Links</span><span class="code div">.</span><a class="link code prop" href="http://instagram.com/tonyfresher">instagram</a><span class="code parath">)</span></div>
-          <div class="code-line"><span class="code">        </span><span class="code div">.</span><span class="code func">getInTouch</span><span class="code parath">(</span><span class="code kw">on:</span><span class="code"> </span><span class="code class">Links</span><span class="code div">.</span><a class="link code prop" href="http://t.me/tonyfresher">telegram</a><span class="code parath">)</span></div>
-          <div class="code-line"><span class="code">        </span><span class="code div">.</span><span class="code func">getInTouch</span><span class="code parath">(</span><span class="code kw">on:</span><span class="code"> </span><span class="code class">Links</span><span class="code div">.</span><a class="link code prop" href="http://vk.com/tonyfresher">vk</a><span class="code parath">)</span></div><span class="code-line"><span class="code div">}</span></span>
+          <div class="code-line"><span class="code">    </span><span class="code func">print</span><span class="code parath">(</span><span class="code var">self</span><span class="code parath">)</span></div><span class="code-line"><span class="code div">}</span></span>
         </div>
       </div>
-      <footer class="footer"><span class="footer__name">Anton Fresher</span><span class="footer__copy">
-          <script type="text/javascript">document.write(`© ${new Date().getFullYear()}`);</script></span></footer>
+      <footer class="footer">
+        <div class="links"><a class="link" href="http://github.com/tonyfresher">gitHub</a><a class="link" href="http://behance.net/tonyfresher">behance</a><a class="link" href="http://instagram.com/tonyfresher">instagram</a><a class="link" href="http://t.me/tonyfresher">telegram</a><a class="link" href="http://vk.com/tonyfresher">vkontakte</a></div><span class="footer__name">Anton Fresher</span><span class="footer__copy">
+          <script type="text/javascript">document.write(`© ${new Date().getFullYear()}`);</script></span>
+      </footer>
     </main>
   </body>
 </html>
