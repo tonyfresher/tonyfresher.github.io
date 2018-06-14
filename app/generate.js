@@ -13,11 +13,6 @@ const splitted = __dirname.split(path.sep)
 splitted.pop()
 const distDir = splitted.join(path.sep);
 
-generate('index');
-generate('resume/developer', developerResumeData);
-generate('resume/designer', designerResumeData);
-generate('cheatsheets/strong-text');
-
 function generate(name, locals) {
     let stepsBackCount = name.split('/').length - 1;
     let publicDir = stepsBackCount === 0
@@ -29,3 +24,9 @@ function generate(name, locals) {
 
     fs.writeFileSync(path.join(distDir, `${name}.html`), page);
 }
+
+generate('index');
+generate('404');
+generate('resume/developer', developerResumeData);
+generate('resume/designer', designerResumeData);
+generate('cheatsheets/strong-text');

@@ -122,16 +122,6 @@ html(lang="ru")
 
       footer.footer
         span.footer__name Anton Fresher
-        .footer__copy
-          span
-            script(type="text/javascript").
-              document.write(new Date().getFullYear().toString().charAt(0));
-          span
-            script(type="text/javascript").
-              document.write(new Date().getFullYear().toString().charAt(1));
-          span
-            script(type="text/javascript").
-              document.write(new Date().getFullYear().toString().charAt(2));
-          span
-            script(type="text/javascript").
-              document.write(new Date().getFullYear().toString().charAt(3));
+        span.footer__copy
+          script(type="text/javascript").
+            document.write(new Date().getFullYear().toString());

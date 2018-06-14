@@ -20,5 +20,5 @@ exports.strongTextCheatsheet = (req, res) => {
 };
 
 exports.error404 = (req, res) => {
-    res.sendStatus(404);
+    res.status(404).render('404');
 };
