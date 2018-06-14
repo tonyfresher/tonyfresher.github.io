@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Hello World! — Anton Fresher's Pages</title>
-    <link rel="icon" type="image/png" href="./app/public//images/favicon.png" />
+    <link rel="icon" type="image/png" href="./app/public/assets/hand.png">
     <link rel="stylesheet" href="./app/public/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Anton Fresher's pages">
@@ -15,192 +14,71 @@
     <meta property="og:image:width" content="460">
     <meta property="og:image:height" content="460">
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter47324241 = new Ya.Metrika({
-                        id:47324241,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true
-                    });
-                } catch(e) { }
+    <script type="text/javascript">
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+          try {
+            w.yaCounter47324241 = new Ya.Metrika({
+              id:47324241,
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true
             });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
+          } catch(e) { }
+        });
+      
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+      
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/47324241" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/47324241" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
-</head>
-
-<body>
-<div class="background-gradient"></div>
-<main class="main">
-    <div class="files">
-        <div class="files__file-wrapper">
-            <span class="files__filename">HelloWorld.swift</span>
+  </head>
+  <body>
+    <div class="background-gradient"></div>
+    <main>
+      <div class="ide">
+        <div class="ide__top-panel">
+          <div class="top-panel__buttons-wrapper">
+            <div class="top-panel__button"></div>
+            <div class="top-panel__button"></div>
+            <div class="top-panel__button"></div>
+          </div><span class="top-panel__title">HelloWorld.swift — Anton Fresher's Pages</span>
         </div>
-        <a class="files__file-wrapper" href="./resume/developer">
-            <span class="files__filename">developer.html</span>
-        </a>
-        <a class="files__file-wrapper" href="./resume/designer">
-            <span class="files__filename">designer.html</span>
-        </a>
-    </div>
-    <div class="code-sheet">
-        <div class="code-line">
-            <span class="code func">hiThere</span>
-            <span class="code"> </span>
-            <span class="code div">{</span>
+        <div class="pages">
+          <div class="pages__name">HelloWorld.swift</div><a class="pages__name" href="./resume/developer">developer.html</a><a class="pages__name" href="./resume/designer">designer.html</a>
+          <input class="show-more__checkbox" type="checkbox" id="pages__show-more-checkbox">
+          <label class="pages__name show-more" for="pages__show-more-checkbox">...</label><a class="pages__name" href="./cheatsheets/strong-text">cheatsheets/strong-text.md</a>
         </div>
-        <div class="code-line">
-            <span class="code">    </span>
-            <span class="code kw">var</span>
-            <span class="code"> </span>
-            <span class="code var">me</span>
-            <span class="code"> </span>
-            <span class="code div">=</span>
-            <span class="code"> </span>
-            <span class="code class">AntonFresher</span>
-            <span class="code parath">(</span>
-            <span class="code parath">)</span>
+        <div class="code-sheet">
+          <div class="code-line"><span class="code func">hiThere</span><span class="code"> </span><span class="code div">{</span></div>
+          <div class="code-line"><span class="code">    </span><span class="code kw">var</span><span class="code"> </span><span class="code var">self</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code class">AntonFresher</span><span class="code parath">(</span><span class="code parath">)</span></div>
+          <div class="code-line"><span class="code">    </span><span class="code var">self</span><span class="code div">.</span><span class="code prop">education</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code class">Student</span><span class="code parath">(</span><span class="code kw">of:</span><span class="code"> </span><span class="code class">UrFU</span><span class="code div">.</span><a class="code prop prop_link" href="http://math-mech.ru" target="_blank">mathMech</a><span class="code parath">)</span></div>
+          <div class="code-line"><span class="code">    </span><span class="code var">self</span><span class="code div">.</span><span class="code prop">interests</span><span class="code"> </span><span class="code div">=</span><span class="code"> </span><span class="code div">[</span></div>
+          <div class="code-line"><span class="code">        </span><span class="code str">'dev'</span><span class="code div">,</span><span class="code"> </span><span class="code str">'design'</span><span class="code div">,</span><span class="code"> </span><span class="code str">'math'</span><span class="code div">,</span><span class="code"> </span><span class="code str">'data science'</span></div>
+          <div class="code-line"><span class="code">    </span><span class="code div">]</span></div>
+          <div class="code-line"><span class="code"> </span></div>
+          <div class="code-line"><span class="code">    </span><span class="code func">print</span><span class="code parath">(</span><span class="code var">self</span><span class="code div">.</span><span class="code prop">links</span><span class="code parath">)</span></div><span class="code-line"><span class="code div">}</span></span>
         </div>
-        <div class="code-line">
-            <span class="code">    </span>
-            <span class="code var">me</span>
-            <span class="code div">.</span>
-            <span class="code prop">education</span>
-            <span class="code"> </span>
-            <span class="code div">=</span>
-            <span class="code"> </span>
-            <span class="code class">Student</span>
-            <span class="code parath">(</span>
-            <span class="code kw">of:</span>
-            <span class="code"> </span>
-            <span class="code class">UrFU</span>
-            <span class="code div">.</span>
-            <a class="code link prop" href="http://math-mech.ru" target="_blank">mathMech</a>
-            <span class="code parath">)</span>
-        </div>
-        <div class="code-line">
-            <span class="code">    </span>
-            <span class="code var">me</span>
-            <span class="code div">.</span>
-            <span class="code prop">interests</span>
-            <span class="code"> </span>
-            <span class="code div">=</span>
-            <span class="code"> </span>
-            <span class="code div">[</span>
-        </div>
-        <div class="code-line">
-            <span class="code">        </span>
-            <span class="code str">'dev'</span>
-            <span class="code div">,</span>
-            <span class="code"> </span>
-            <span class="code str">'design'</span>
-            <span class="code div">,</span>
-            <span class="code"> </span>
-            <span class="code str">'math'</span>
-            <span class="code div">,</span>
-            <span class="code"> </span>
-            <span class="code str">'data science'</span>
-        </div>
-        <div class="code-line">
-            <span class="code">    </span>
-            <span class="code div">]</span>
-        </div>
-        <div class="code-line">
-            <span class="code"> </span>
-        </div>
-        <div class="code-line">
-            <span class="code">    </span>
-            <span class="code var">me</span>
-        </div>
-        <div class="code-line">
-            <span class="code">        </span>
-            <span class="code div">.</span>
-            <span class="code func">hostCode</span>
-            <span class="code parath">(</span>
-            <span class="code kw">using:</span>
-            <span class="code"> </span>
-            <span class="code class">Links</span>
-            <span class="code div">.</span>
-            <a class="link code prop" href="http://github.com/tonyfresher" target="_blank">gitHub</a>
-            <span class="code parath">)</span>
-        </div>
-        <div class="code-line">
-            <span class="code">        </span>
-            <span class="code div">.</span>
-            <span class="code func">postGraphics</span>
-            <span class="code parath">(</span>
-            <span class="code kw">on:</span>
-            <span class="code"> </span>
-            <span class="code class">Links</span>
-            <span class="code div">.</span>
-            <a class="link code prop" href="http://behance.net/tonyfresher" target="_blank">behance</a>
-            <span class="code parath">)</span>
-        </div>
-        <div class="code-line">
-            <span class="code">        </span>
-            <span class="code div">.</span>
-            <span class="code func">uploadPhotos</span>
-            <span class="code parath">(</span>
-            <span class="code kw">to:</span>
-            <span class="code"> </span>
-            <span class="code class">Links</span>
-            <span class="code div">.</span>
-            <a class="link code prop" href="http://instagram.com/tonyfresher" target="_blank">instagram</a>
-            <span class="code parath">)</span>
-        </div>
-        <div class="code-line">
-            <span class="code">        </span>
-            <span class="code div">.</span>
-            <span class="code func">getInTouch</span>
-            <span class="code parath">(</span>
-            <span class="code kw">on:</span>
-            <span class="code"> </span>
-            <span class="code class">Links</span>
-            <span class="code div">.</span>
-            <a class="link code prop" href="http://t.me/tonyfresher" target="_blank">telegram</a>
-            <span class="code parath">)</span>
-        </div>
-        <div class="code-line">
-            <span class="code">        </span>
-            <span class="code div">.</span>
-            <span class="code func">getInTouch</span>
-            <span class="code parath">(</span>
-            <span class="code kw">on:</span>
-            <span class="code"> </span>
-            <span class="code class">Links</span>
-            <span class="code div">.</span>
-            <a class="link code prop" href="http://vk.com/tonyfresher" target="_blank">vk</a>
-            <span class="code parath">)</span>
-        </div>
-        <span class="code-line">
-            <span class="code div">}</span>
-        </span>
-    </div>
-    <footer class="footer">
-        <span class="footer__name">Anton Fresher</span>
-        <span class="footer__copy">
-            &copy;
-            <script type="text/javascript">
-                document.write(new Date().getFullYear());
-            </script>
-        </span>
-    </footer>
-</main>
-</body>
-
+      </div>
+      <div class="links"><a class="link" href="http://github.com/tonyfresher">gitHub</a><a class="link" href="http://behance.net/tonyfresher">behance</a><a class="link" href="http://t.me/tonyfresher">telegram</a><a class="link" href="http://vk.com/tonyfresher">vkontakte</a><a class="link" href="http://instagram.com/tonyfresher">instagram</a></div>
+      <footer class="footer"><span class="footer__name">Anton Fresher</span>
+        <div class="footer__copy"><span>
+            <script type="text/javascript">document.write(new Date().getFullYear().toString().charAt(0));</script></span><span>
+            <script type="text/javascript">document.write(new Date().getFullYear().toString().charAt(1));</script></span><span>
+            <script type="text/javascript">document.write(new Date().getFullYear().toString().charAt(2));</script></span><span>
+            <script type="text/javascript">document.write(new Date().getFullYear().toString().charAt(3));</script></span></div>
+      </footer>
+    </main>
+  </body>
 </html>
