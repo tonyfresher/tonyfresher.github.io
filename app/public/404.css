@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600');
+
+body {
+    display: flex;
+
+    height: 100vh;
+
+    margin: 0;
+
+    font-family: 'IBM Plex Mono', 'Fira Code', monospace;
+    background: #3294fc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 24px;
+
+    width: 100%;
+
+    color: #fefffe;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.code {
+    font-size: 6em;
+}
+
+.main-page-link {
+    margin-bottom: 24px;
+
+    color: #fefffe;
+
+    font-size: 1.03em;
+    text-decoration: none;
+    outline: none
+}
+
+.main-page-link:hover {
+    background: #fefffe;
+    color: #3294fc;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 425px) {
+    main {
+        font-size: 20px;
+    }
+}
