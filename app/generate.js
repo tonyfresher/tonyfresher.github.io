@@ -14,13 +14,8 @@ splitted.pop()
 const distDir = splitted.join(path.sep);
 
 function generate(name, locals) {
-    let stepsBackCount = name.split('/').length - 1;
-    let publicDir = stepsBackCount === 0
-        ? './app/public'
-        : `${'../'.repeat(stepsBackCount)}app/public`;
-
     let page = pug.renderFile(path.join(srcDir, `${name}.pug`), 
-        Object.assign({ publicDir, pretty: true }, locals));
+        Object.assign({ publicDir: '/app/public', pretty: true }, locals));
 
     fs.writeFileSync(path.join(distDir, `${name}.html`), page);
 }

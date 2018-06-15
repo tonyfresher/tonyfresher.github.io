@@ -2,7 +2,7 @@
 
 html {
     --background-color: #fff06a;
-    --ide-border-radius: 7px;
+    --window-border-radius: 7px;
 }
 
 body {
@@ -59,37 +59,37 @@ main {
 
 /* IDE */
 
-.ide {
+.window {
     position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
 
-    margin-top: 17vh;
+    margin-top: 18vh;
 
     width: min-content;
 
-    font-size: 18px;
+    font-size: 17px;
 
     background: #262626;
-    border-radius: var(--ide-border-radius);
+    border-radius: var(--window-border-radius);
 
     box-shadow: 0 2px 16px #2e2e2e;
 }
 
-.ide__top-panel {
+.window__header {
     display: flex;
     align-items: center;
 
     padding: 6px 10px;
 }
 
-.top-panel__buttons-wrapper {
+.header__buttons-wrapper {
     position: absolute;
     display: flex;
 }
 
-.top-panel__button {
+.header__button {
     margin-right: 7.7px;
 
     width: 12px;
@@ -99,7 +99,7 @@ main {
     border-radius: 50%;
 }
 
-.top-panel__title {
+.header__title {
     width: 100%;
 
     text-align: center;
@@ -116,7 +116,7 @@ main {
 
     max-width: 100%;
 
-    border-radius: var(--ide-border-radius) var(--ide-border-radius) 0 0;
+    border-radius: var(--window-border-radius) var(--window-border-radius) 0 0;
 }
 
 .pages__name {
@@ -329,12 +329,12 @@ main {
         padding: 10px 14px;
     }
 
-    .ide {
+    .window {
         margin-top: 24vh;
         font-size: 12px;
     }
 
-    .top-panel__button {
+    .header__button {
         margin-right: 5.7px;
         width: 8px;
         height: 8px;
@@ -365,12 +365,12 @@ main {
         padding: 8px 12px;
     }
 
-    .ide {
+    .window {
         margin-top: 24vh;
         font-size: 9px;
     }
 
-    .top-panel__button {
+    .header__button {
         margin-right: 4px;
         width: 7px;
         height: 7px;
