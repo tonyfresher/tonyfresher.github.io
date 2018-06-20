@@ -4,6 +4,7 @@ html {
     font-family: 'IBM Plex Sans', sans-serif;
     --accent-color: #fa6149;
     --minor-color: #777;
+    --dark-color: #151515;
     --link-color: #356bff;
     --divider-color: #ccc;
 }
@@ -26,7 +27,7 @@ main {
 
     border-radius: 8px;
 
-    color: #151515;
+    color: var(--dark-color);
 
     font-size: 16px;
 }
@@ -40,8 +41,12 @@ main * {
 /* Table Of Contents */
 
 .table-of-contents > ul {
-    padding: 0 0 0 1em;
-    border-left: 2px solid var(--link-color);
+    padding: 0 0 0 .8em;
+    border-left: 2px solid var(--dark-color);
+}
+
+.table-of-contents > ul a {
+    color: var(--dark-color);
 }
 
 .table-of-contents > ul ul {
