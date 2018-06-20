@@ -19,5 +19,15 @@ html(lang="ru")
   body
     main
       include:markdown-it(
-        plugins=['markdown-it-deflist', 'markdown-it-mark', ['markdown-it-container', 'important'], ['markdown-it-container', 'block']]
+        plugins=[
+          'markdown-it-deflist',
+          'markdown-it-mark',
+          'markdown-it-checkbox',
+          ['markdown-it-container', 'important'],
+          ['markdown-it-container', 'block'],
+          ['markdown-it-container', 'table-of-contents'],
+          ['markdown-it-anchor', { 
+            'level': [1, 2, 3]
+          }]
+        ]
         ) ../../data/cheatsheets/strong-text.md

@@ -4,6 +4,8 @@ html {
     font-family: 'IBM Plex Sans', sans-serif;
     --accent-color: #fa6149;
     --minor-color: #777;
+    --link-color: #356bff;
+    --divider-color: #ccc;
 }
 
 body {
@@ -35,7 +37,52 @@ main * {
     box-sizing: border-box;
 }
 
-p, table, dd {
+/* Table Of Contents */
+
+.table-of-contents > ul {
+    padding: 0 0 0 1em;
+    border-left: 2px solid var(--link-color);
+}
+
+.table-of-contents > ul ul {
+    margin: .5em 0;
+    padding-left: 1em;
+}
+
+.table-of-contents > ul > li:last-child {
+    padding-bottom: 0;
+}
+
+.table-of-contents > ul > li:last-child > ul {
+    margin-bottom: 0;
+}
+
+.table-of-contents li > input[type='checkbox'],
+.table-of-contents li > input[type='checkbox'] ~ ul,
+.table-of-contents li > input[type='checkbox']:checked ~ label {
+    display: none;
+}
+
+.table-of-contents li > input[type='checkbox'] ~ label {
+    margin-left: .4em;
+    color: #ababab;
+}
+
+.table-of-contents li > input[type='checkbox']:checked ~ ul {
+    display: block;
+}
+
+/* Block */
+
+.block {
+    margin: 1.4em 0;
+}
+
+/* Text */
+
+p,
+table,
+dd {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
@@ -50,16 +97,14 @@ h1 {
     border-bottom: 4px solid var(--accent-color);
 }
 
-.block {
-    margin: 1.4em 0;
-}
-
 dd {
-    margin: 0 0 0.5em 0;
+    margin: 0 0 .5em 0;
 
-    font-size: 0.9em;
+    font-size: .9em;
     color: var(--minor-color);
 }
+
+/* Important */
 
 .important {
     max-width: 100%;
@@ -76,20 +121,24 @@ dd {
     font-weight: 600;
 }
 
+/* Lists */
+
 ul {
     padding: 0 1.5em;
-    margin: 1em 0 1em;
+    margin: 1em 0;
 
     list-style-type: none;
 }
 
 li {
-    padding-bottom: 8px;
+    padding-bottom: .5em;
 }
 
 li:last-child {
-    padding-bottom: 2px;
+    padding-bottom: .125em;
 }
+
+/* Dividers */
 
 hr {
     border: 0;
@@ -97,17 +146,21 @@ hr {
 
     width: 100%;
 
-    border-bottom: 2px dashed #ddd;
+    border-bottom: 2px dashed var(--divider-color);
 }
 
+/* Links */
+
 a {
-    color: #356bff;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
 }
+
+/* Text Decoration */
 
 mark {
     background: transparent;
@@ -118,6 +171,8 @@ mark {
 s {
     color: var(--minor-color);
 }
+
+/* Tables */
 
 table {
     display: block;
@@ -133,7 +188,7 @@ thead {
 }
 
 th {
-    font-size: 0.9em;
+    font-size: .9em;
 }
 
 th:empty {
@@ -147,10 +202,11 @@ tr {
 
 th, td {
     min-width: 12px;
-    padding: 0.13em 0 0.3em 0;
+    padding: .13em 0 .3em 0;
 }
 
 /* Mobile */
+
 @media screen and (max-width: 425px) {
     main {
         margin: 24px 12px 12px;
@@ -162,6 +218,6 @@ th, td {
 
 @media screen and (max-width: 320px) {
     table {
-        font-size: 0.84em;
+        font-size: .84em;
     }
 }
