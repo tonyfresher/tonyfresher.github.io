@@ -15,6 +15,10 @@ exports.designerResume = (req, res) => {
     res.render('resume/designer', designerResumeData);
 };
 
+exports.strongTextCheatsheet = (req, res) => {
+    res.render('cheatsheets/strong-text');
+};
+
 exports.error404 = (req, res) => {
-    res.sendStatus(404);
+    res.status(404).render('404');
 };

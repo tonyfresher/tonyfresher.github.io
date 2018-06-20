@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:200,500,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:300,500,700');
 
 html {
-    font-family: 'IBM Plex Sans', 'Oswald', sans-serif;
     --background-color: #fff06a;
-    --ide-border-radius: 7px;
+    --window-border-radius: 7px;
 }
 
 body {
+    font-family: 'IBM Plex Sans', 'Oswald', sans-serif;
+
     position: relative;
     margin: 0;
 
     width: 100%;
+    min-height: 100vh;
 }
 
 .background-gradient {
@@ -37,7 +39,7 @@ main {
     padding: 0 16px;
 
     width: min-content;
-    max-width: 100vw;
+    max-width: 100%;
     min-height: 100vh;
 
     animation: colorize 2s ease-out;
@@ -57,37 +59,37 @@ main {
 
 /* IDE */
 
-.ide {
+.window {
     position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
 
-    margin-top: 17vh;
+    margin-top: 18vh;
 
     width: min-content;
 
-    font-size: 18px;
+    font-size: 17px;
 
     background: #262626;
-    border-radius: var(--ide-border-radius);
+    border-radius: var(--window-border-radius);
 
     box-shadow: 0 2px 16px #2e2e2e;
 }
 
-.ide__top-panel {
+.window__header {
     display: flex;
     align-items: center;
 
     padding: 6px 10px;
 }
 
-.top-panel__buttons-wrapper {
+.header__buttons-wrapper {
     position: absolute;
     display: flex;
 }
 
-.top-panel__button {
+.header__button {
     margin-right: 7.7px;
 
     width: 12px;
@@ -97,7 +99,7 @@ main {
     border-radius: 50%;
 }
 
-.top-panel__title {
+.header__title {
     width: 100%;
 
     text-align: center;
@@ -114,7 +116,7 @@ main {
 
     max-width: 100%;
 
-    border-radius: var(--ide-border-radius) var(--ide-border-radius) 0 0;
+    border-radius: var(--window-border-radius) var(--window-border-radius) 0 0;
 }
 
 .pages__name {
@@ -248,7 +250,7 @@ main {
     justify-content: space-between;
     align-items: center;
 
-    margin: 30px 0;
+    margin: 30px 0 0;
 
     width: 100%;
 
@@ -281,8 +283,7 @@ main {
 
     flex-grow: 2;
 
-    margin: 0 auto;
-    padding: 24px;
+    margin: 24px auto;
 
     box-sizing: border-box;
 
@@ -291,6 +292,7 @@ main {
 
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: .7ch;
 
     color: #1a1a1a;
 }
@@ -302,38 +304,37 @@ main {
     color: #fefffe;
 
     font-weight: 700;
-    letter-spacing: .7ch;
 }
 
 .footer__copy {
     display: flex;
     justify-content: center;
 
-    width: 100%;
+    padding-left: .7ch;
 
+    background: #262626;
     color: #fefefe;
 
-    font-weight: 200;
-}
-
-.footer__copy span {
-    padding: 0 .7ch;
-    background: #262626;
+    font-weight: 300;
 }
 
 /* Tablet */
 
 @media screen and (min-width: 400px) and (max-width: 599px) {
+    body {
+        min-height: 90vh;
+    }
+
     .pages__name {
         padding: 10px 14px;
     }
 
-    .ide {
+    .window {
         margin-top: 24vh;
         font-size: 12px;
     }
 
-    .top-panel__button {
+    .header__button {
         margin-right: 5.7px;
         width: 8px;
         height: 8px;
@@ -356,16 +357,20 @@ main {
 /* Mobile */
 
 @media screen and (max-width: 399px) {
+    body {
+        min-height: 90vh;
+    }
+
     .pages__name {
         padding: 8px 12px;
     }
 
-    .ide {
+    .window {
         margin-top: 24vh;
         font-size: 9px;
     }
 
-    .top-panel__button {
+    .header__button {
         margin-right: 4px;
         width: 7px;
         height: 7px;

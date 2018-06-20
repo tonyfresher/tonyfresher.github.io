@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&subset=cyrillic');
+
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+    --accent-color: #fa6149;
+    --minor-color: #777;
+    --dark-color: #151515;
+    --link-color: #356bff;
+    --divider-color: #ccc;
+}
+
+body {
+    margin: 0;
+
+    background: var(--accent-color);
+}
+
+main {
+    margin: 48px 24px 24px;
+    padding: 30px 24px 24px;
+
+    max-width: 620px;
+
+    background: #fff;
+
+    box-shadow: 0 2px 24px #0000004f;
+
+    border-radius: 8px;
+
+    color: var(--dark-color);
+
+    font-size: 16px;
+}
+
+main * {
+    max-width: 100%;
+    width: max-content;
+    box-sizing: border-box;
+}
+
+/* Table Of Contents */
+
+.table-of-contents > ul {
+    padding: 0 0 0 .8em;
+    border-left: 2px solid var(--dark-color);
+}
+
+.table-of-contents > ul a {
+    color: var(--dark-color);
+}
+
+.table-of-contents > ul ul {
+    margin: .5em 0;
+    padding-left: 1em;
+}
+
+.table-of-contents > ul > li:last-child {
+    padding-bottom: 0;
+}
+
+.table-of-contents > ul > li:last-child > ul {
+    margin-bottom: 0;
+}
+
+.table-of-contents li > input[type='checkbox'],
+.table-of-contents li > input[type='checkbox'] ~ ul,
+.table-of-contents li > input[type='checkbox']:checked ~ label {
+    display: none;
+}
+
+.table-of-contents li > input[type='checkbox'] ~ label {
+    margin-left: .4em;
+    color: #ababab;
+}
+
+.table-of-contents li > input[type='checkbox']:checked ~ ul {
+    display: block;
+}
+
+/* Block */
+
+.block {
+    margin: 1.4em 0;
+}
+
+/* Text */
+
+p,
+table,
+dd {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+
+    text-align: justify;
+}
+
+h1 {
+    display: inline;
+
+    border-bottom: 4px solid var(--accent-color);
+}
+
+dd {
+    margin: 0 0 .5em 0;
+
+    font-size: .9em;
+    color: var(--minor-color);
+}
+
+/* Important */
+
+.important {
+    max-width: 100%;
+    width: max-content;
+    box-sizing: border-box;
+
+    border: 6px solid var(--accent-color);
+
+    font-weight: 500;
+}
+
+.important ul {
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* Lists */
+
+ul {
+    padding: 0 1.5em;
+    margin: 1em 0;
+
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: .5em;
+}
+
+li:last-child {
+    padding-bottom: .125em;
+}
+
+/* Dividers */
+
+hr {
+    border: 0;
+    height: 0;
+
+    width: 100%;
+
+    border-bottom: 2px dashed var(--divider-color);
+}
+
+/* Links */
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Text Decoration */
+
+mark {
+    background: transparent;
+
+    font-weight: 500;
+}
+
+s {
+    color: var(--minor-color);
+}
+
+/* Tables */
+
+table {
+    display: block;
+    margin: 1em 0;
+
+    border-collapse: collapse;
+
+    overflow-x: scroll;
+}
+
+thead {
+    border-spacing: 0;
+}
+
+th {
+    font-size: .9em;
+}
+
+th:empty {
+    padding: 0;
+    height: 0;
+}
+
+tr {
+    vertical-align: top;
+}
+
+th, td {
+    min-width: 12px;
+    padding: .13em 0 .3em 0;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 425px) {
+    main {
+        margin: 24px 12px 12px;
+        padding: 18px 16px 16px;
+
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    table {
+        font-size: .84em;
+    }
+}
