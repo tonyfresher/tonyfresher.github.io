@@ -70,7 +70,9 @@ main * {
 
 .table-of-contents li > input[type='checkbox'] ~ label {
     margin-left: .4em;
+
     color: #ababab;
+    cursor: pointer;
 }
 
 .table-of-contents li > input[type='checkbox']:checked ~ ul {
