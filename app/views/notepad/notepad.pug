@@ -1,0 +1,29 @@
+- let pageLink = '/notepad';
+| ---
+| permalink: #{pageLink}.html
+| ---
+|
+doctype html
+html(lang='ru')
+
+  head
+    meta(charset='utf-8')
+    title buffr
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href=`${publicDir || ''}/notepad/notepad.css`)
+    script(type='text/javascript' src=`${publicDir || ''}/notepad/reading-time.js` defer)
+    script(type='text/javascript' src=`${publicDir || ''}/notepad/index.js` defer)
+    
+  body
+    main
+      textarea(
+        class='textbox'
+        oninput='localStorage.ntpdText = document.querySelector(".textarea").value;' 
+        placeholder='Type your text')
+    script.
+      let textarea = document.querySelector('.textarea');
+
+      if (localStorage.ntpdText) {
+        textarea.innerHTML = localStorage.ntpdText;
+      }
+      textarea.focus();

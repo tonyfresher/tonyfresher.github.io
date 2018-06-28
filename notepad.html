@@ -1,0 +1,27 @@
+---
+permalink: /notepad.html
+---
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>buffr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/app/public/notepad/notepad.css">
+    <script type="text/javascript" src="/app/public/notepad/reading-time.js" defer></script>
+    <script type="text/javascript" src="/app/public/notepad/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <textarea class="textarea" oninput="localStorage.ntpdText = document.querySelector(&quot;.textarea&quot;).value;" placeholder="Type your text"></textarea>
+    </main>
+    <script>
+      let textarea = document.querySelector('.textarea');
+      
+      if (localStorage.ntpdText) {
+        textarea.innerHTML = localStorage.ntpdText;
+      }
+      textarea.focus();
+    </script>
+  </body>
+</html>
