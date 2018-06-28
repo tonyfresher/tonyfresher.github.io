@@ -1,5 +1,14 @@
 'use strict';
 
-let textbox = document.querySelector('.textbox');
+let info = {
+    readingTime: document.querySelector('.info__reading-time')
+};
 
-console.log(readingTime(textbox.value));
+function updateInfo() {
+    info.readingTime.textContent = readingTime(textarea.value).text;
+    console.log(readingTime(textarea.value));
+}
+
+updateInfo();
+
+textarea.addEventListener('input', updateInfo);

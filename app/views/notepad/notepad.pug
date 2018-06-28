@@ -1,8 +1,3 @@
-- let pageLink = '/notepad';
-| ---
-| permalink: #{pageLink}.html
-| ---
-|
 doctype html
 html(lang='ru')
 
@@ -16,10 +11,11 @@ html(lang='ru')
     
   body
     main
-      textarea(
-        class='textbox'
+      textarea.textarea(
         oninput='localStorage.ntpdText = document.querySelector(".textarea").value;' 
         placeholder='Type your text')
+      .info
+        span.info__reading-time
     script.
       let textarea = document.querySelector('.textarea');
 
