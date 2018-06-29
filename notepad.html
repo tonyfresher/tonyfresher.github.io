@@ -11,15 +11,7 @@
   <body>
     <main>
       <textarea class="textarea" oninput="localStorage.ntpdText = document.querySelector(&quot;.textarea&quot;).value;" placeholder="Type your text"></textarea>
-      <div class="info"><span class="info__reading-time"></span></div>
+      <div class="info"><span class="info__words"></span></div>
     </main>
-    <script>
-      let textarea = document.querySelector('.textarea');
-      
-      if (localStorage.ntpdText) {
-        textarea.innerHTML = localStorage.ntpdText;
-      }
-      textarea.focus();
-    </script>
   </body>
 </html>

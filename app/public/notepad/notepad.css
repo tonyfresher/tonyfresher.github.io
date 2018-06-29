@@ -21,13 +21,16 @@ main {
 .textarea {
     flex-grow: 2;
 
-    padding: 18px 16px;
+    padding: 24px 20px;
 
     width: 100%;
     box-sizing: border-box;
+
+    color: #151515;
     background: #fff;
 
-    font-size: 18px;
+    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+    font-size: 17px;
 
     border: 0;
     border-radius: 8px 8px 0 0;
@@ -37,7 +40,19 @@ main {
 }
 
 .info {
-    background: #eee;
+    display: flex;
+    justify-content: flex-end;
+
+    z-index: 1;
+
+    padding: 4px 20px;
+
+    background: #eeeeee;
 
     border-radius: 0 0 8px 8px;
+}
+
+.info__words {
+    font-size: 14px;
+    color: #999;
 }

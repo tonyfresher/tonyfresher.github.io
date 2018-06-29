@@ -15,11 +15,4 @@ html(lang='ru')
         oninput='localStorage.ntpdText = document.querySelector(".textarea").value;' 
         placeholder='Type your text')
       .info
-        span.info__reading-time
-    script.
-      let textarea = document.querySelector('.textarea');
-
-      if (localStorage.ntpdText) {
-        textarea.innerHTML = localStorage.ntpdText;
-      }
-      textarea.focus();
+        span.info__words

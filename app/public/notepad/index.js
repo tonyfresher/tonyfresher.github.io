@@ -1,14 +1,29 @@
 'use strict';
 
-let info = {
-    readingTime: document.querySelector('.info__reading-time')
+let DOM = {
+    textarea: document.querySelector('.textarea'),
+    info: {
+        words: document.querySelector('.info__words')
+    }
 };
 
-function updateInfo() {
-    info.readingTime.textContent = readingTime(textarea.value).text;
-    console.log(readingTime(textarea.value));
+function initTextarea() {
+    if (localStorage.ntpdText) {
+        DOM.textarea.innerHTML = localStorage.ntpdText;
+    } else {
+        DOM.textarea.focus();
+    }
 }
 
-updateInfo();
+function updateInfo() {
+    DOM.info.words.textContent = readingTime(DOM.textarea.value).text;
+}
 
-textarea.addEventListener('input', updateInfo);
+function main() {
+    initTextarea();
+
+    updateInfo();
+    DOM.textarea.addEventListener('input', updateInfo);
+}
+
+document.addEventListener('DOMContentLoaded', main);
