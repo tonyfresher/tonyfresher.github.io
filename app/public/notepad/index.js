@@ -22,8 +22,8 @@ function getText() {
 }
 
 function initTextArea() {
-    if (localStorage.ntpdText) {
-        DOM.textArea.innerHTML = getOption(KEYS.text) || '';
+    if (getOption(KEYS.text)) {
+        DOM.textArea.innerHTML = getOption(KEYS.text);
     } else {
         DOM.textArea.focus();
     }
