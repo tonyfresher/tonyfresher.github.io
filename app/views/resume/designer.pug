@@ -1,18 +1,18 @@
 doctype html
-html(lang="ru")
+html(lang='ru')
 
   head
-    meta(charset="utf-8")
+    meta(charset='utf-8')
     title #{profile.name} | Резюме
-    link(rel="stylesheet" href=`${publicDir || ""}/resume/common.css`)
-    link(rel="stylesheet" href=`${publicDir || ""}/resume/designer.css`)
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(property="og:title" content="#{profile.name} | Резюме")
-    meta(property="og:type" content="website")
-    meta(property="og:url" content="http://tonyfresher.github.io/resume/designer")
-    meta(property="og:image" content="https://avatars0.githubusercontent.com/u/17676963")
-    meta(property="og:image:width" content="460")
-    meta(property="og:image:height" content="460")
+    link(rel='stylesheet' href=`${publicDir || ''}/resume/common.css`)
+    link(rel='stylesheet' href=`${publicDir || ''}/resume/designer.css`)
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(property='og:title' content='#{profile.name} | Резюме')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content='http://tonyfresher.github.io/resume/designer')
+    meta(property='og:image' content='https://avatars0.githubusercontent.com/u/17676963')
+    meta(property='og:image:width' content='460')
+    meta(property='og:image:height' content='460')
     include ../metrica
 
   body
@@ -21,7 +21,7 @@ html(lang="ru")
 
       .body
         p.about #{profile.about}
-        a.developer-resume-link(href="../resume/developer" target="_blank")
+        a.developer-resume-link(href='../resume/developer' target='_blank')
           | А ещё я очень люблю писать код
 
         section.skills-block
@@ -43,13 +43,13 @@ html(lang="ru")
 
         section.education-block
           h2.section-header Образование
-          div(class={"collapsable-grid": education.length > 1})
+          div(class={'collapsable-grid': education.length > 1})
             each item in education
               .education
-                a.education__university(href=item.link, target="_blank") #{item.university}
+                a.education__university(href=item.link, target='_blank') #{item.university}
                 span.education__speciality #{item.speciality}
                 span.education__period #{item.period}
 
         section.connects-block
           each item in connects.social
-            a.connect(href=item.link target="_blank") #{item.name}
+            a.connect(href=item.link target='_blank') #{item.name}

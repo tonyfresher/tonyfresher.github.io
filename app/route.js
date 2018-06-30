@@ -14,5 +14,7 @@ module.exports = app => {
 
         .get('/cheatsheets/strong-text', controller.strongTextCheatsheet)
 
+        .get('/notepad', controller.notepad)
+
         .all('*', controller.error404);
 }

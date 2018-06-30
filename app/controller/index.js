@@ -19,6 +19,10 @@ exports.strongTextCheatsheet = (req, res) => {
     res.render('cheatsheets/strong-text');
 };
 
+exports.notepad = (req, res) => {
+    res.render('notepad/notepad');
+};
+
 exports.error404 = (req, res) => {
     res.status(404).render('404');
 };

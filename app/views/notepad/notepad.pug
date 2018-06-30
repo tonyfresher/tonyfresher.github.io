@@ -1,0 +1,27 @@
+doctype html
+html(lang='ru')
+
+  head
+    meta(charset='utf-8')
+    title t.ext — Простой редактор текста
+    link(rel='icon' type='image/png' href=`${publicDir || ''}/assets/paper.png`)
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='description' content='t.ext — Простой редактор текста')
+    meta(property='og:title' content='t.ext — Простой редактор текста')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content='http://tonyfresher.github.io/notepad')
+    link(rel='stylesheet' href=`${publicDir || ''}/notepad/notepad.css`)
+    script(type='text/javascript' src=`${publicDir || ''}/notepad/reading-time.js` defer)
+    script(type='text/javascript' src=`${publicDir || ''}/notepad/index.js` defer)
+    script(type='text/javascript' src="https://api.glvrd.ru/v1/glvrd.js" defer)
+    include ../metrica
+    
+  body
+    input.night-theme-on(type='checkbox' id='night-theme-on')
+    main
+      textarea.text-area(placeholder='Type your text')
+      .status-bar
+        label(for='night-theme-on').status-bar__nignt-theme-switch
+        .status-bar__space
+        a.status-bar__glvrd-score(href='https://glvrd.ru' target='blank')
+        span.status-bar__reading-time

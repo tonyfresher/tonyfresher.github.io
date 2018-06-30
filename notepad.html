@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>t.ext — Простой редактор текста</title>
+    <link rel="icon" type="image/png" href="/app/public/assets/paper.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="t.ext — Простой редактор текста">
+    <meta property="og:title" content="t.ext — Простой редактор текста">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://tonyfresher.github.io/notepad">
+    <link rel="stylesheet" href="/app/public/notepad/notepad.css">
+    <script type="text/javascript" src="/app/public/notepad/reading-time.js" defer></script>
+    <script type="text/javascript" src="/app/public/notepad/index.js" defer></script>
+    <script type="text/javascript" src="https://api.glvrd.ru/v1/glvrd.js" defer></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+          try {
+            w.yaCounter47324241 = new Ya.Metrika({
+              id:47324241,
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true
+            });
+          } catch(e) { }
+        });
+      
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+      
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/47324241" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <input class="night-theme-on" type="checkbox" id="night-theme-on">
+    <main>
+      <textarea class="text-area" placeholder="Type your text"></textarea>
+      <div class="status-bar">
+        <label class="status-bar__nignt-theme-switch" for="night-theme-on"></label>
+        <div class="status-bar__space"></div><a class="status-bar__glvrd-score" href="https://glvrd.ru" target="blank"></a><span class="status-bar__reading-time"></span>
+      </div>
+    </main>
+  </body>
+</html>

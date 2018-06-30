@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+
+    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+}
+
+main {
+    height: inherit;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+.text-area {
+    flex-grow: 2;
+
+    padding: 24px 20px;
+
+    color: #151515;
+    background: #fff;
+
+    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+
+    border: 0;
+
+    outline: none;
+    resize:none;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: flex-end;
+
+    z-index: 1;
+
+    padding: 4px 20px;
+
+    background: #eee;
+
+    font-size: 14px;
+    color: #999;
+}
+
+.status-bar__glvrd-score {
+    margin-right: 20px;
+
+    color: #999;
+    text-decoration: none;
+}
+
+.status-bar__space {
+    flex-grow: 2;
+    min-width: 80px;
+}
+
+.status-bar__nignt-theme-switch {
+    cursor: pointer;
+}
+
+.night-theme-on {
+    display: none;
+}
+
+.night-theme-on:checked ~ main .text-area {
+    background: #2C2C34;
+    color: #d7d7f8;
+}
+
+
+.night-theme-on:checked ~ main .status-bar {
+    background: #212125;
+}
+
+.night-theme-on:checked ~ main .status-bar,
+.night-theme-on:checked ~ main .status-bar__glvrd-score {
+    color: #777;
+}
