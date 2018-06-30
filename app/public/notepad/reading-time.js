@@ -8,7 +8,7 @@ function readingTime(text, options = {}) {
     const displayed = Math.ceil(minutes.toFixed(2));
 
     return {
-        text: `${words} words, ${displayed} min read`,
+        displayed,
         minutes,
         time,
         words
