@@ -91,11 +91,11 @@ function updateReadingTime() {
 // FS
 
 function saveOption(key, value) {
-    localStorage[key] = value;
+    localStorage.setItem(key, value);
 }
 
 function getOption(key) {
-    return localStorage[key];
+    return localStorage.getItem(key);
 }
 
 // Main
