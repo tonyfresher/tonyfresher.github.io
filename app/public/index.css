@@ -264,25 +264,6 @@ main {
     color: #fefffe;
 }
 
-/* Background Name */
-
-.background-name {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%,-52%);
-
-    font-family: 'Oswald', sans-serif;
-    font-size: 54vh;
-    font-weight: 700;
-
-    line-height: 54vh;
-    text-transform: uppercase;
-
-    color: #f5f5f5;
-}
-
 /* Tablet */
 
 @media screen and (min-width: 400px) and (max-width: 599px) {
