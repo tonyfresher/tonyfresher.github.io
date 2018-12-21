@@ -23,6 +23,10 @@ exports.notepad = (req, res) => {
     res.render('notepad/notepad');
 };
 
+exports.carsInfographic = (req, res) => {
+    res.render('cars-infographic/cars-infographic');
+};
+
 exports.error404 = (req, res) => {
     res.status(404).render('404');
 };
