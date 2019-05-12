@@ -108,7 +108,7 @@ main {
     justify-content: flex-start;
     align-content: flex-start;
 
-    max-width: 100%;
+    max-width: 90%;
 
     border-radius: var(--window-border-radius) var(--window-border-radius) 0 0;
 }
