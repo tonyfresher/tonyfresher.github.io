@@ -20,7 +20,8 @@ html(lang='ru')
       include header
 
       .body
-        p.about #{profile.about}
+        if profile.about
+          p.about #{profile.about}
 
         section.education-block
           h2.section-header Образование

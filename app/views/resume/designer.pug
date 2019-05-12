@@ -20,9 +20,10 @@ html(lang='ru')
       include header
 
       .body
-        p.about #{profile.about}
-        a.developer-resume-link(href='../resume/developer' target='_blank')
-          | А ещё я очень люблю писать код
+        if profile.about
+          p.about #{profile.about}
+          a.developer-resume-link(href='../resume/developer' target='_blank')
+            | А ещё я очень люблю писать код
 
         section.skills-block
           h2.section-header Навыки
