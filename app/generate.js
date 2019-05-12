@@ -26,4 +26,3 @@ generate('resume/developer', { locals: developerResumeData });
 generate('resume/designer', { locals: designerResumeData });
 generate('cheatsheets/strong-text');
 generate('notepad/notepad', { path: 'notepad' });
-generate('cars-infographic/cars-infographic', { path: 'cars-infographic' });

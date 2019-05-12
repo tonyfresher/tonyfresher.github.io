@@ -16,7 +16,5 @@ module.exports = app => {
 
         .get('/notepad', controller.notepad)
 
-        .get('/cars-infographic', controller.carsInfographic)
-
         .all('*', controller.error404);
 }
