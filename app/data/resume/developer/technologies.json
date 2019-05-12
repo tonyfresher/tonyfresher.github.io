@@ -1,13 +1,12 @@
 [
     {
-        "name": "iOS на Swift",
-        "courses": "школа мобильной разработки, стажировка",
-        "projects": "iOS-проекты",
+        "name": "HTML/CSS/JavaScript",
+        "courses": "школа разработки интерфейсов",
+        "projects": "таски по курсу ШРИ, прототипирование макетов",
         "project-links": [
             {
-                "link": "https://github.com/tonyfresher/notes-ios",
                 "path": "github.com/tonyfresher/",
-                "accent": "notes-ios"
+                "accent": "webdev-task-1"
             }
         ]
     },
@@ -23,13 +22,14 @@
         ]
     },
     {
-        "name": "HTML/CSS/JavaScript",
-        "courses": "школа разработки интерфейсов",
-        "projects": "таски по курсу ШРИ, прототипирование макетов",
+        "name": "iOS на Swift",
+        "courses": "школа мобильной разработки, стажировка",
+        "projects": "iOS-проекты",
         "project-links": [
             {
+                "link": "https://github.com/tonyfresher/notes-ios",
                 "path": "github.com/tonyfresher/",
-                "accent": "webdev-task-1"
+                "accent": "notes-ios"
             }
         ]
     },
