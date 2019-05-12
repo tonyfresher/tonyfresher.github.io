@@ -68,7 +68,7 @@ main {
     background: #262626;
     border-radius: var(--window-border-radius);
 
-    box-shadow: 0 2px 12px #555;
+    box-shadow: 0 2px 12px #888;
 }
 
 .window__header {
@@ -99,7 +99,7 @@ main {
     text-align: center;
 
     font-size: 72%;
-    color: #ccc;
+    color: transparent;
 }
 
 .pages {
