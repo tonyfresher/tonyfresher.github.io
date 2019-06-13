@@ -212,6 +212,15 @@ th, td {
     padding: .13em 0 .3em 0;
 }
 
+/* Quotes */
+
+blockquote {
+    margin: 0;
+    padding-left: 6px;
+
+    border-left: 2px solid var(--dark-color);
+}
+
 /* Mobile */
 
 @media screen and (max-width: 425px) {
