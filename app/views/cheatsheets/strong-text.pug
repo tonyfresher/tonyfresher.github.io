@@ -1,33 +1,28 @@
-doctype html
-html(lang='ru')
+extends ./layout
 
-  head
-    meta(charset='utf-8')
-    title Как написать сильный текст — Некраткий пересказ «Пиши, сокращай»
-    link(rel='icon' type='image/png' href=`${publicDir || ''}/assets/dragon.png`)
-    link(rel='stylesheet' href=`${publicDir || ''}/cheatsheets/strong-text.css`)
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(name='description' content='Как написать сильный текст — Некраткий пересказ «Пиши, сокращай»')
-    meta(property='og:title' content='Как написать сильный текст — Некраткий пересказ «Пиши, сокращай»')
-    meta(property='og:type' content='website')
-    meta(property='og:url' content='http://tonyfresher.github.io/cheatsheets/strong-text')
-    meta(property='og:image' content='https://book.glvrd.ru/ip/ch3-3-white.jpg')
-    meta(property='og:image:width' content='2200')
-    meta(property='og:image:height' content='1633')
-    include ../metrica
+block append head
+  title Как писать сильный текст? — Некраткий пересказ «Пиши, сокращай»
+  link(rel='icon' type='image/png' href=`${publicDir || ''}/assets/dragon.png`)
+  link(rel='stylesheet' href=`${publicDir || ''}/cheatsheets/strong-text.css`)
+  meta(name='description' content='Как писать сильный текст? — Некраткий пересказ «Пиши, сокращай»')
+  meta(property='og:title' content='Как писать сильный текст? — Некраткий пересказ «Пиши, сокращай»')
+  meta(property='og:type' content='website')
+  meta(property='og:url' content='http://tonyfresher.github.io/cheatsheets/strong-text')
+  meta(property='og:image' content='https://book.glvrd.ru/ip/ch3-3-white.jpg')
+  meta(property='og:image:width' content='2200')
+  meta(property='og:image:height' content='1633')
 
-  body
-    main
-      include:markdown-it(
-        plugins=[
-          'markdown-it-deflist',
-          'markdown-it-mark',
-          'markdown-it-checkbox',
-          ['markdown-it-container', 'important'],
-          ['markdown-it-container', 'block'],
-          ['markdown-it-container', 'table-of-contents'],
-          ['markdown-it-anchor', { 
-            'level': [1, 2, 3]
-          }]
-        ]
-        ) ../../data/cheatsheets/strong-text.md
+block content
+  include:markdown-it(
+    plugins=[
+      'markdown-it-deflist',
+      'markdown-it-mark',
+      'markdown-it-checkbox',
+      ['markdown-it-container', 'important'],
+      ['markdown-it-container', 'block'],
+      ['markdown-it-container', 'table-of-contents'],
+      ['markdown-it-anchor', { 
+        'level': [1, 2, 3]
+      }]
+    ]
+    ) ../../data/cheatsheets/strong-text.md
