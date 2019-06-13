@@ -1,0 +1,24 @@
+extends ./layout
+
+block append head
+  title Как фокусироваться на главном — Некраткий пересказ «Найди время»
+  link(rel='stylesheet' href=`${publicDir || ''}/cheatsheets/strong-text.css`)
+  meta(name='description' content='Как фокусироваться на главном — Некраткий пересказ «Найди время»')
+  meta(property='og:title' content='Как фокусироваться на главном — Некраткий пересказ «Найди время»')
+  meta(property='og:type' content='website')
+  meta(property='og:url' content='http://tonyfresher.github.io/cheatsheets/make-time')
+
+block content
+  include:markdown-it(
+    plugins=[
+      'markdown-it-deflist',
+      'markdown-it-mark',
+      'markdown-it-checkbox',
+      ['markdown-it-container', 'important'],
+      ['markdown-it-container', 'block'],
+      ['markdown-it-container', 'table-of-contents'],
+      ['markdown-it-anchor', { 
+        'level': [1, 2, 3]
+      }]
+    ]
+    ) ../../data/cheatsheets/make-time.md
