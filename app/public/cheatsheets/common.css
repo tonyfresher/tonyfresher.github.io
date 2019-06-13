@@ -41,8 +41,7 @@ main * {
 /* Table Of Contents */
 
 .table-of-contents > ul {
-    padding: 0 0 0 .8em;
-    border-left: 2px solid var(--dark-color);
+    padding: 0;
 }
 
 .table-of-contents > ul a {
