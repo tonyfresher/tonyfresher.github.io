@@ -19,6 +19,10 @@ exports.strongTextCheatsheet = (req, res) => {
     res.render('cheatsheets/strong-text');
 };
 
+exports.makeTimeCheatsheet = (req, res) => {
+    res.render('cheatsheets/make-time');
+};
+
 exports.notepad = (req, res) => {
     res.render('notepad/notepad');
 };

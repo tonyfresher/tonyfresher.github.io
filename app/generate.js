@@ -25,4 +25,5 @@ generate('404');
 generate('resume/developer', { locals: developerResumeData });
 generate('resume/designer', { locals: designerResumeData });
 generate('cheatsheets/strong-text');
+generate('cheatsheets/make-time');
 generate('notepad/notepad', { path: 'notepad' });

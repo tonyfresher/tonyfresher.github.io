@@ -1,0 +1,15 @@
+doctype html
+html(lang='ru')
+
+  head
+    block head
+      meta(charset='utf-8')
+      link(rel='stylesheet' href=`${publicDir || ''}/cheatsheets/common.css`)
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    include ../metrica
+
+  body
+    a.back-button(href='/') ← На главную
+    main
+      block content

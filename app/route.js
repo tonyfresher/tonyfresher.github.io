@@ -13,6 +13,7 @@ module.exports = app => {
         .get('/resume/designer', controller.designerResume)
 
         .get('/cheatsheets/strong-text', controller.strongTextCheatsheet)
+        .get('/cheatsheets/make-time', controller.makeTimeCheatsheet)
 
         .get('/notepad', controller.notepad)
 
