@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&subset=cyrillic');
 
-html {
-    font-family: 'IBM Plex Sans', sans-serif;
+:root {
     --back-button-color: #fff;
     --minor-color: #777;
     --dark-color: #151515;
@@ -11,6 +10,8 @@ html {
 
 body {
     margin: 0;
+
+    font-family: 'IBM Plex Sans', sans-serif;
 
     background: var(--accent-color);
 }
@@ -81,8 +82,7 @@ main * {
 }
 
 .table-of-contents li > input[type='checkbox'],
-.table-of-contents li > input[type='checkbox'] ~ ul,
-.table-of-contents li > input[type='checkbox']:checked ~ label {
+.table-of-contents li > input[type='checkbox'] ~ ul {
     display: none;
 }
 
