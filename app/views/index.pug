@@ -3,119 +3,81 @@ html(lang='ru')
 
   head
     meta(charset='utf-8')
-    title Hello World! — Anton Fresher’s Pages
+    title Антон Фрешер
     link(rel='icon' type='image/png' href=`${publicDir || ''}/assets/hand.png`)
     link(rel='stylesheet' href=`${publicDir || ''}/index.css`)
     meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(name='description' content='Anton Fresher’s Pages')
     meta(property='og:title' content='Hello World!')
     meta(property='og:type' content='profile')
-    meta(property='og:url' content='http://tonyfresher.github.io/')
+    meta(property='og:url' content='https://tonyfresher.github.io/')
     meta(property='og:image' content='https://avatars0.githubusercontent.com/u/17676963')
     meta(property='og:image:width' content='460')
     meta(property='og:image:height' content='460')
     include metrica
 
   body
-    .background
+    script(type='text/javascript').
+      var colors = ['#ff6f61', '#fbc04e', '#00cf85', '#4ebdfb', '#8445eb', '#e858b7'];
+      var accent = colors[Math.floor(Math.random() * colors.length)];
+
+      var htmlElement = document.querySelector(':root');
+
+      htmlElement.style.setProperty('--accent-color', accent);
 
     main
-      .window
-        .window__header
-          .header__buttons-wrapper
-            .header__button
-            .header__button
-            .header__button
-          span.header__title
-            | HelloWorld.swift — Anton Fresher’s Pages
+      h1.header Ну привет!
 
-        .pages
-          .pages__name
-            | HelloWorld.swift
-          a.pages__name(href='./resume/developer')
-            | resume.html
+      .photo
+        img.photo__img(src=`${publicDir || ''}/assets/me.jpg` alt='Фотка потерялась :-(')
+        .photo__overlay
 
-          input.show-more__checkbox(type='checkbox', id='pages__show-more-checkbox')
-          label.pages__name.show-more(for='pages__show-more-checkbox')
-            | ...
+      .space
 
-          a.pages__name(href='./cheatsheets/strong-text')
-            | cheatsheets/strong-text.md
-          a.pages__name(href='./notepad')
-            | t.ext
+      span.name Антон Фрешер
 
-        .code-sheet
-          .code-line
-            span.code.func hiThere
-            span.code  
-            span.code.div {
-          .code-line
-            span.code     
-            span.code.kw var
-            span.code  
-            span.code.var self
-            span.code  
-            span.code.div =
-            span.code  
-            span.code.class AntonFresher
-            span.code.parath (
-            span.code.parath )
-          .code-line
-            span.code     
-            span.code.var self
-            span.code.div .
-            span.code.prop education
-            span.code  
-            span.code.div =
-            span.code  
-            span.code.class ComputerScience
-            span.code.parath (
-            span.code.kw at:
-            span.code  
-            span.code.class UrFU
-            span.code.div .
-            a.code.prop.prop_link(href='http://math-mech.ru' target='_blank') mathMech
-            span.code.parath )
-          .code-line
-            span.code     
-            span.code.var self
-            span.code.div .
-            span.code.prop interests
-            span.code  
-            span.code.div =
-            span.code  
-            span.code.div [
-          .code-line
-            span.code         
-            span.code.str 'dev'
-            span.code.div ,
-            span.code  
-            span.code.str 'design'
-            span.code.div ,
-            span.code  
-            span.code.str 'math'
-            span.code.div ,
-            span.code  
-            span.code.str 'data science'
-          .code-line
-            span.code     
-            span.code.div ]
-          .code-line
-            span.code  
-          .code-line
-            span.code     
-            span.code.func print
-            span.code.parath (
-            span.code.var self
-            span.code.div .
-            span.code.prop links
-            span.code.parath )
-          span.code-line
-            span.code.div }
+      .space
 
-      .links
-          a.link(href='http://github.com/tonyfresher') gitHub
-          a.link(href='http://behance.net/tonyfresher') behance
-          a.link(href='http://t.me/tonyfresher') telegram
-          a.link(href='http://vk.com/tonyfresher') vkontakte
-          a.link(href='http://instagram.com/tonyfresher') instagram
+      .at-block
+        span.at-block__who математик
+        span.at-block__at @
+        a.at-block__where(href='http://math-mech.ru' target='_blank') Матмех УрФУ
+      .at-block
+        span.at-block__who разнорабочий
+        span.at-block__at @
+        a.at-block__where(href='https://surveys.yandex.ru' target='_blank') Яндекс.Взгляд
+      .at-block
+        span.at-block__who дизайнер
+        span.at-block__at @
+        a.at-block__where(href='https://shutok-ne-ponimaesh.net' target='_blank') ООО «А нарисуй»
+
+      .space
+
+      .at-block
+        span.at-block__who tonyfresher
+        span.at-block__at @
+        a.at-block__where(href='https://tele.gg/tonyfresher' target='_blank') Телеграм
+      .at-block
+        span.at-block__who tonyfresher
+        span.at-block__at @
+        a.at-block__where(href='http://vk.com/tonyfresher' target='_blank') Вконтакте
+      .at-block
+        span.at-block__who tonyfresher
+        span.at-block__at @
+        a.at-block__where(href='https://instagram.com/tonyfresher' target='_blank') Инстаграм
+      .at-block
+        span.at-block__who tonyfresher
+        span.at-block__at @
+        a.at-block__where(href='https://github.com/tonyfresher' target='_blank') Гитхаб
+      .at-block
+        span.at-block__who tonyfresher
+        span.at-block__at @
+        a.at-block__where(href='https://behance.net/tonyfresher' target='_blank') Биханс
+
+      .pages
+        input.pages__more-checkbox(type='checkbox', id='more-checkbox')
+        label.pages__more-label(for='more-checkbox') ...
+
+        a.pages__page(href='./resume/developer') резюме
+        a.pages__page(href='./cheatsheets/strong-text') как написать сильный текст
+        a.pages__page(href='./notepad') блокнот
