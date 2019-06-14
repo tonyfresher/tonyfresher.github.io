@@ -18,19 +18,23 @@ html(lang='ru')
 
   body
     script(type='text/javascript').
-      var colors = ['#ff6f61', '#fbc04e', '#00cf85', '#4ebdfb', '#8445eb', '#e858b7'];
-      var accent = colors[Math.floor(Math.random() * colors.length)];
+      function setRandomAccentColor() {
+        var colors = ['#ff6f61', '#fbc04e', '#00cf85', '#4ebdfb', '#8445eb', '#e858b7'];
+        var accent = colors[Math.floor(Math.random() * colors.length)];
 
-      var htmlElement = document.querySelector(':root');
+        var htmlElement = document.querySelector(':root');
 
-      htmlElement.style.setProperty('--accent-color', accent);
+        htmlElement.style.setProperty('--accent-color', accent);
+      }
+
+      setRandomAccentColor()
 
     main
       h1.header Ну привет!
 
       .photo
         img.photo__img(src=`${publicDir || ''}/assets/me.jpg` alt='Фотка потерялась :-(')
-        .photo__overlay
+        .photo__overlay(onclick='setRandomAccentColor()')
 
       .space
 

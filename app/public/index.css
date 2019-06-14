@@ -73,6 +73,8 @@ a:hover {
 
     background: var(--accent-color);
     opacity: .5;
+
+    cursor: pointer;
 }
 
 /* Name */
