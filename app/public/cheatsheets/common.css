@@ -2,7 +2,7 @@
 
 html {
     font-family: 'IBM Plex Sans', sans-serif;
-    --accent-color: #fa6149;
+    --back-button-color: #fff;
     --minor-color: #777;
     --dark-color: #151515;
     --link-color: #356bff;
@@ -15,8 +15,27 @@ body {
     background: var(--accent-color);
 }
 
+/* Back button */
+
+.back-button {
+    display: block;
+
+    margin: 24px 24px 0;
+    padding: 12px 12px 12px 0;
+    
+    width: max-content;
+
+    color: var(--back-button-color);
+}
+
+.back-button:hover {
+    text-decoration: none;
+}
+
+/* Main */
+
 main {
-    margin: 80px 24px 24px;
+    margin: 8px 24px 24px;
     padding: 30px 36px 24px 24px;
 
     max-width: 620px;
@@ -231,8 +250,12 @@ blockquote {
 /* Mobile */
 
 @media screen and (max-width: 450px) {
+    .back-button {
+        margin: 32px 16px 0;
+    }
+
     main {
-        margin: 50px 0 0;
+        margin: 8px 0 0;
         padding: 18px 16px 16px;
 
         border-radius: 8px 8px 0 0;
