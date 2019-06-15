@@ -46,6 +46,7 @@ a:hover {
     margin: 20px 0;
 
     font-size: 60px;
+    color: var(--accent-color);
 }
 
 /* Photo */
@@ -85,7 +86,6 @@ a:hover {
     margin-top: 8px;
 
     font-weight: 500;
-    color: var(--accent-color);
 }
 
 /* Space */
