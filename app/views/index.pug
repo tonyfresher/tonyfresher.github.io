@@ -30,11 +30,12 @@ html(lang='ru')
       setRandomAccentColor()
 
     main
-      h1.header Ну привет!
+      .header-wrapper
+        h1.header Ну привет!
 
-      .photo
-        img.photo__img(src=`${publicDir || ''}/assets/me.jpg` alt='Фотка потерялась :-(')
-        .photo__overlay(onclick='setRandomAccentColor()')
+        .photo
+          img.photo__img(src=`${publicDir || ''}/assets/me.jpg` alt='Фотка потерялась :-(')
+          .photo__overlay(onclick='setRandomAccentColor()')
 
       .space
 

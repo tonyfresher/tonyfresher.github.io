@@ -43,8 +43,15 @@ a:hover {
 
 /* Header */
 
+.header-wrapper {
+    width: min-content;
+    max-width: 100%;
+}
+
 .header {
     margin: 20px 0;
+
+    width: max-content;
 
     font-size: 60px;
     color: var(--accent-color);
@@ -54,8 +61,6 @@ a:hover {
 
 .photo {
     position: relative;
-
-    max-width: 100%;
 }
 
 .photo__img {
