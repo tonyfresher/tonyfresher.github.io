@@ -36,8 +36,9 @@ a {
 }
 
 a:hover {
-    color: var(--accent-color);
-    border-bottom-color: var(--accent-color);
+    color: #fff;
+    background: var(--accent-color);
+    border-bottom-color: transparent;
 }
 
 /* Header */
