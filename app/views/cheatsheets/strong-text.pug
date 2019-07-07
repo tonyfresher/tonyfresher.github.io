@@ -22,7 +22,10 @@ block content
       ['markdown-it-container', 'block'],
       ['markdown-it-container', 'table-of-contents'],
       ['markdown-it-anchor', { 
-        'level': [1, 2, 3]
+        'level': [2, 3],
+        'permalink': true,
+        'permalinkSymbol': '*',
+        'permalinkSpace': false
       }]
     ]
     ) ../../data/cheatsheets/strong-text.md
