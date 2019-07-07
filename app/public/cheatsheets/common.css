@@ -247,6 +247,18 @@ blockquote {
     border-left: 2px solid var(--dark-color);
 }
 
+/* Anchors */
+
+.header-anchor
+{
+    opacity: 0.1;
+    color: var(--dark-color);
+}
+
+.header-anchor:hover {
+    text-decoration: none;
+}
+
 /* Mobile */
 
 @media screen and (max-width: 450px) {
