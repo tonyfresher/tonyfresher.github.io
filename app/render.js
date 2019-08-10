@@ -13,17 +13,17 @@ const splitted = __dirname.split(path.sep)
 splitted.pop()
 const distDir = splitted.join(path.sep);
 
-function generate(name, options = {}) {
+function render(name, options = {}) {
     let page = pug.renderFile(path.join(srcDir, `${name}.pug`), 
         Object.assign({ publicDir: '/app/public', pretty: true }, options.locals));
 
     fs.writeFileSync(path.join(distDir, `${options.path || name}.html`), page);
 }
 
-generate('index');
-generate('404');
-generate('resume/developer', { locals: developerResumeData });
-generate('resume/designer', { locals: designerResumeData });
-generate('cheatsheets/strong-text');
-generate('cheatsheets/make-time');
-generate('notepad/notepad', { path: 'notepad' });
+render('index');
+render('404');
+render('resume/developer', { locals: developerResumeData });
+render('resume/designer', { locals: designerResumeData });
+render('cheatsheets/strong-text');
+render('cheatsheets/make-time');
+render('notepad/notepad', { path: 'notepad' });

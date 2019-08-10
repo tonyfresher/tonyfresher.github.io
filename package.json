@@ -4,8 +4,8 @@
   "description": "Anton Fresher's web-profile",
   "main": "app/index.js",
   "scripts": {
-    "start": "node app/generate; node app/index",
-    "generate": "node app/generate",
+    "start": "npm run render; node app/index",
+    "render": "node app/render",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
