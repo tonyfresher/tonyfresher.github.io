@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700');
+@import url('https://rsms.me/inter/inter.css');
 
 html {
     height: 100%;
@@ -8,7 +8,7 @@ body {
     margin: 0;
     height: 100%;
 
-    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
 }
 
 main {
@@ -27,8 +27,8 @@ main {
     color: #151515;
     background: #fff;
 
-    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
     font-size: 17px;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
 
     border: 0;
 
