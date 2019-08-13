@@ -24,13 +24,40 @@ function getText() {
 function initTextArea() {
     if (getOption(KEYS.text)) {
         DOM.textArea.innerHTML = getOption(KEYS.text);
+        changeTextSize();
     } else {
         DOM.textArea.focus();
     }
 
     DOM.textArea.addEventListener('input', () => {
         saveOption(KEYS.text, getText());
+        changeTextSize();
     });
+}
+
+function changeTextSize() {
+    const text = getText();  
+    const wordCount = text.split(' ').length;
+    console.log(wordCount)
+        
+    if (wordCount < 10) {
+        DOM.textArea.style.setProperty('font-size', '60px');
+    }
+    else if (wordCount < 25) {
+        DOM.textArea.style.setProperty('font-size', '40px');
+    }
+    else if (wordCount < 40) {
+        DOM.textArea.style.setProperty('font-size', '32px');
+    }
+    else if (wordCount < 50) {
+        DOM.textArea.style.setProperty('font-size', '28px');
+    }
+    else if (wordCount < 70) {
+        DOM.textArea.style.setProperty('font-size', '24px');
+    }
+    else {
+        DOM.textArea.style.setProperty('font-size', '20px');
+    }
 }
 
 // Text Info
