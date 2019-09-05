@@ -102,13 +102,17 @@ a:hover {
     height: 12px;
 }
 
-/* @ blocks */
+/* Text blocks */
 
-.at-block {
+.text-block {
     margin: 6px 0;
 }
 
-.at-block__at {
+.text-block__what {
+    margin: 0 6px 0 0;
+}
+
+.text-block__at {
     margin: 0 4px;
 }
 
