@@ -25,7 +25,7 @@
   "homepage": "https://github.com/tonyfresher/tonyfresher.github.io#readme",
   "dependencies": {
     "dotenv": "^5.0.1",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "husky": "^3.0.3",
     "jstransformer-markdown-it": "^2.1.0",
     "markdown-it-anchor": "^5.0.2",
