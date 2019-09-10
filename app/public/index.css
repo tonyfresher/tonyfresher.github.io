@@ -69,8 +69,6 @@ a:hover {
     display: block;
 
     width: 100%;
-
-    filter: grayscale(100%);
 }
 
 .photo__overlay {
