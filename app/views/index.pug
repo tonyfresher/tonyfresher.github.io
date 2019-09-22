@@ -29,9 +29,9 @@ html(lang='ru')
 
       setRandomAccentColor();
 
-    main
+    main.main-container
       .header-wrapper
-        h1.header Ну привет!
+        h1.header Ну, привет!
 
         .photo
           img.photo__img(src=`${publicDir || ''}/assets/me.jpg` alt='Фотка потерялась :-(')
@@ -44,11 +44,13 @@ html(lang='ru')
       .space
 
       .text-block
-        span.text-block__what делаю
         a.text-block__where(href='https://surveys.yandex.ru' target='_blank') Взгляд
+        span.text-block__description делаю сервис исследований в рамках внутреннего стартапа 
+
       .text-block
-        span.text-block__what готовлю
         a.text-block__where(href='https://tele.gg/freshwrites' target='_blank') Freш
+        span.text-block__description пишу про технологии, дизайн, продукты и психологию
+
 
       .space
 

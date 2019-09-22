@@ -25,6 +25,10 @@ main {
     color: var(--text-color);
 }
 
+.main-container {
+    width: min-content;
+}
+
 /* Links */
 
 a {
@@ -103,8 +107,12 @@ a:hover {
     margin: 6px 0;
 }
 
-.text-block__what {
-    margin: 0 6px 0 0;
+.text-block__description {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #999;
 }
 
 .text-block__at {
