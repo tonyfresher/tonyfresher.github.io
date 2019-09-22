@@ -88,11 +88,27 @@ a:hover {
 /* Name */
 
 .name {
+    position: relative;
+
     display: block;
 
     margin-top: 8px;
 
     font-weight: 500;
+}
+
+.name__arrow {
+    margin-left: 8px;
+
+    position: absolute;
+
+    bottom: 10px;
+
+    height: 72px;
+}
+
+.arrow__part {
+    stroke: var(--accent-color);
 }
 
 /* Space */
