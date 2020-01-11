@@ -5,7 +5,7 @@
     --accent-color: #00cf85;
     --text-primary-color: #151515;
     --text-secondary-color: #999;
-    --divider-color: #ccc;
+    --divider-color: #e1e1e1;
 }
 
 body {
@@ -39,7 +39,7 @@ a {
 
     color: var(--text-primary-color);
 
-    border-bottom: 1px solid var(--divider-color);
+    border-bottom: 2px solid var(--divider-color);
 }
 
 a:hover {
