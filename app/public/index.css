@@ -3,7 +3,8 @@
 :root {
     --background-color: #fff;
     --accent-color: #00cf85;
-    --text-color: #151515;
+    --text-primary-color: #151515;
+    --text-secondary-color: #999;
     --divider-color: #ccc;
 }
 
@@ -22,7 +23,7 @@ main {
     margin: 0 32px 60px;
 
     font-size: 22px;
-    color: var(--text-color);
+    color: var(--text-primary-color);
 }
 
 .main-container {
@@ -36,7 +37,7 @@ a {
 
     text-decoration: none;
 
-    color: var(--text-color);
+    color: var(--text-primary-color);
 
     border-bottom: 1px solid var(--divider-color);
 }
@@ -128,7 +129,7 @@ a:hover {
 
     margin-top: 2px;
 
-    color: #999;
+    color: var(--text-secondary-color);
 }
 
 .text-block__at {
@@ -157,7 +158,7 @@ a:hover {
 }
 
 .pages__more-label:hover {
-    color: var(--text-color);
+    color: var(--text-primary-color);
 }
 
 .pages__more-checkbox:checked ~ .pages__more-label {
