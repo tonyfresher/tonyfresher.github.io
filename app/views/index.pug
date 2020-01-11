@@ -1,3 +1,8 @@
+mixin link-arrow
+  svg.text-block__arrow(width='32' height='12' viewBox='0 0 83 33' fill='none' xmlns='http://www.w3.org/2000/svg')
+    path.arrow__part(d='M3.48942 17.5039C26.4939 17.5039 95.5072 17.5039 72.5028 17.5039' stroke='#5DCB8B' stroke-width='6' stroke-linecap='round' stroke-linejoin='round')
+    path.arrow__part(d='M46.605 3.2157C55.9586 6.91365 61.4183 10.479 70.8756 13.9056C71.7809 14.2336 82.1031 16.5841 79.6137 17.8288C67.7442 23.7636 57.8163 27.296 45 30.5' stroke='#5DCB8B' stroke-width='6' stroke-linecap='round' stroke-linejoin='round')
+
 doctype html
 html(lang='ru')
 
@@ -41,59 +46,48 @@ html(lang='ru')
 
       .name
         span.name__label Антон Фрешер
-        svg.name__arrow(width='30' height='162' viewBox='0 0 57 162' fill='none' xmlns='http://www.w3.org/2000/svg')
-          path.arrow__part(d='M2.65973 159.039C14.85 156.845 25.5742 154.612 31.205 143.35C38.9582 127.844 37.96 113.667 37.96 96.2833C37.96 68.1738 37.96 -16.1547 37.96 11.9548' stroke-width='5' stroke-linecap='round' stroke-linejoin='round')
-          path.arrow__part(d='M20.271 48.3718C24.7896 36.9424 29.3761 25.4991 33.5631 13.9431C33.9639 12.8369 36.836 0.223977 38.3569 3.26584C45.6087 17.7694 49.695 34.6724 53.6101 50.3329' stroke-width='5' stroke-linecap='round' stroke-linejoin='round')
 
       .space
 
       .text-block
-        a.text-block__where(href='https://surveys.yandex.ru' target='_blank') Взгляд
+        a(href='https://surveys.yandex.ru' target='_blank') Взгляд
+        +link-arrow
         span.text-block__description делаю сервис исследований в рамках внутреннего стартапа
 
       .text-block
-        a.text-block__where(href='tg://resolve?domain=freshwrites' target='_blank') Freш
+        a(href='tg://resolve?domain=freshwrites' target='_blank') Freш
+        +link-arrow
         span.text-block__description пишу про технологии, дизайн, продукты и психологию
-
 
       .space
 
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='tg://resolve?domain=tonyfresher' target='_blank') Телеграм
+        a(href='tg://resolve?domain=tonyfresher' target='_blank') Телеграм
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='https://instagram.com/tonyfresher' target='_blank') Инстаграм
+        a(href='https://instagram.com/tonyfresher' target='_blank') Инстаграм
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='http://vk.com/tonyfresher' target='_blank') Вконтакте
+        a(href='http://vk.com/tonyfresher' target='_blank') Вконтакте
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='https://behance.net/tonyfresher' target='_blank') Биханс
+        a(href='https://behance.net/tonyfresher' target='_blank') Биханс
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='https://linkedin.com/in/tonyfresher' target='_blank') Линкдин
+        a(href='https://linkedin.com/in/tonyfresher' target='_blank') Линкдин
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='https://github.com/tonyfresher' target='_blank') Гитхаб
+        a(href='https://github.com/tonyfresher' target='_blank') Гитхаб
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='https://ru.bookmate.com/@tonyfresher' target='_blank') Букмейт
+        a(href='https://ru.bookmate.com/@tonyfresher' target='_blank') Букмейт
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='https://music.yandex.ru/users/tonyfresher' target='_blank') Музыка
+        a(href='https://music.yandex.ru/users/tonyfresher' target='_blank') Музыка
+        +link-arrow
       .text-block
-        span.text-block__who tonyfresher
-        span.text-block__at @
-        a.text-block__where(href='https://www.kinopoisk.ru/user/3085085' target='_blank') Кинопоиск
+        a(href='https://www.kinopoisk.ru/user/3085085' target='_blank') Кинопоиск
+        +link-arrow
 
       .pages
         input.pages__more-checkbox(type='checkbox', id='more-checkbox')
