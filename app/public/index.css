@@ -43,8 +43,9 @@ a {
 }
 
 a:hover {
-    color: #fff;
+    color: var(--accent-color);
     background: var(--accent-color);
+
     border-bottom-color: transparent;
 }
 
