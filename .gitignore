@@ -1,5 +1,9 @@
 # VS Code
 /.vscode
+
+# ESLint
+.eslintcache
+
 # dependencies
 /node_modules
 /.pnp
