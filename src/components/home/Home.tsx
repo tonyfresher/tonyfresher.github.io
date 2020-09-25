@@ -51,15 +51,12 @@ function Links() {
     return (
         <div className={home('Links')}>
             {i18n.links.map(({service, link, username}) => (
-                <Link
-                    className={home('Link')}
-                    href={link}
-                    key={service}
-                    newWindow
-                >
-                    {service}
+                <div className={home('Link')} key={service}>
+                    <Link href={link} newWindow>
+                        {service}
+                    </Link>
                     <span className={home('LinkUsername')}>{username}</span>
-                </Link>
+                </div>
             ))}
         </div>
     );
@@ -80,11 +77,15 @@ export default function Home() {
                     <div className={home('About')}>
                         <p>
                             {i18n.about[0]}
-                            <Link href={i18n.freshLink} newWindow>
+                            <Link href={i18n.freshLink} color="blue" newWindow>
                                 {i18n.about[1]}
                             </Link>
                             {i18n.about[2]}
-                            <Link href={i18n.surveysLink} newWindow>
+                            <Link
+                                href={i18n.surveysLink}
+                                color="blue"
+                                newWindow
+                            >
                                 {i18n.about[3]}
                             </Link>
                             {i18n.about[4]}

@@ -1,5 +1,5 @@
 .Logo-Name {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
 }

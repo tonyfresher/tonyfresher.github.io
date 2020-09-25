@@ -12,8 +12,8 @@
 .BlogPreview-ArticleHeader {
     margin: 0;
 
-    font-size: 20px;
-    line-height: 26px;
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
 }
 
 .BlogPreview-ArticleContent {
@@ -21,7 +21,7 @@
 }
 
 .BlogPreview-ArticleDate {
-    color: var(--color-transparent-gray);
+    color: var(--inactive-color);
 }
 
 .BlogPreview-ArticleDate::before {

@@ -9,11 +9,11 @@ import './Link.css';
 const link = cn('Link');
 
 export default function Link(props: LinkProps) {
-    const {className = '', href, newWindow, children} = props;
+    const {className = '', href, newWindow, color, children} = props;
 
     return (
         <a
-            className={`${link()} ${className}`}
+            className={`${link({color})} ${className}`}
             href={href}
             target={newWindow ? '_blank' : undefined}
             rel={newWindow ? 'noopener noreferrer' : undefined}

@@ -9,8 +9,8 @@
     grid-template-columns: 400px 332px;
     column-gap: 232px;
 
-    font-size: 20px;
-    line-height: 26px;
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
 }
 
 .Home-Greeting {
@@ -66,17 +66,18 @@
 .Home-ProjectHeader {
     margin: 0;
 
-    font-size: 20px;
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
 }
 
 .Home-Project_past .Home-ProjectHeader {
     font-weight: normal;
 
-    color: var(--color-transparent-gray);
+    color: var(--inactive-color);
 }
 
 .Home-Project_past .Home-ProjectName {
-    color: var(--color-transparent-gray);
+    color: var(--inactive-color);
 }
 
 .Home-ProjectDescription {
@@ -84,7 +85,7 @@
 }
 
 .Home-ProjectPeriod {
-    color: var(--color-transparent-gray);
+    color: var(--inactive-color);
 }
 
 .Home-ProjectPeriod::before {
@@ -102,15 +103,12 @@
 .Home-LinkUsername {
     visibility: hidden;
 
-    color: var(--color-transparent-gray);
+    color: var(--inactive-color);
 }
 
 .Home-LinkUsername::before {
-    content: ' ';
-}
-
-.Home-Link:hover {
-    font-weight: 600;
+    content: '  ';
+    white-space: pre-wrap;
 }
 
 .Home-Link:hover .Home-LinkUsername {
