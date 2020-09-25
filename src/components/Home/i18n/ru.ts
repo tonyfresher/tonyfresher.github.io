@@ -5,8 +5,7 @@ export default {
         'во Freше',
         '. Делаю ',
         'Яндекс.Взгляд',
-        '. Дизайнер-любитель. В прошлом: Яндекс.Погода, Матмех УрФУ.',
-        'Фамилия настоящая.'
+        '. Дизайнер-любитель. В прошлом: Яндекс.Погода, Матмех УрФУ.'
     ],
     surveysLink: 'https://surveys.yandex.ru',
     freshLink: 'https://t.me/freshwrites',
@@ -85,5 +84,6 @@ export default {
             link: 'https://www.kinopoisk.ru/user/3085085',
             username: '/TonyFresher'
         }
-    ]
+    ],
+    lastNameNote: 'Фамилия настоящая.'
 };

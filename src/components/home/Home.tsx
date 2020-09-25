@@ -91,7 +91,6 @@ export default function Home() {
                             </Link>
                             {i18n.about[4]}
                         </p>
-                        <p>{i18n.about[5]}</p>
                     </div>
                     <BlogPreview />
                 </div>
@@ -104,6 +103,7 @@ export default function Home() {
                     <Projects />
                     <Links />
                 </div>
+                <p className={home('FooterNote')}>{i18n.lastNameNote}</p>
             </div>
         </div>
     );

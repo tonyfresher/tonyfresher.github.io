@@ -124,6 +124,14 @@
     visibility: visible;
 }
 
+.Home-FooterNote {
+    grid-column: 1 / -1;
+
+    margin-top: 300px;
+
+    color: var(--inactive-color);
+}
+
 @media (hover: none) {
     .Home-LinkUsername {
         visibility: visible;
