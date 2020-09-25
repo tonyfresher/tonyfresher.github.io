@@ -10,8 +10,8 @@ const logo = cn('Logo');
 
 export default function Logo() {
     return (
-        <div className={logo()}>
+        <a className={logo()} href="/">
             <span className={logo('Name')}>{i18n.name}</span>
-        </div>
+        </a>
     );
 }

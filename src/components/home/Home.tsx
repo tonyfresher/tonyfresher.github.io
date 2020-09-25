@@ -2,6 +2,7 @@ import React from 'react';
 
 import {cn} from '@bem-react/classname';
 
+import BlogPreview from '../BlogPreview';
 import Logo from '../Logo';
 
 import CroppedPhoto from './images/me-cropped.jpg';
@@ -78,6 +79,7 @@ export default function Home() {
                         alt="Me"
                     />
                     <p className={home('About')}>{i18n.about}</p>
+                    <BlogPreview />
                 </div>
                 <div className={home('Column', {position: 'right'})}>
                     <img

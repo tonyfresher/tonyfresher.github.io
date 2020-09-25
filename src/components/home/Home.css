@@ -35,6 +35,10 @@
     white-space: pre-line;
 }
 
+.Home .BlogPreview {
+    margin-top: 40px;
+}
+
 .Home-Projects,
 .Home-Links {
     margin-top: 32px;

@@ -1,3 +1,8 @@
+.Logo {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
 .Logo-Name {
     font-weight: 600;
     font-size: 20px;

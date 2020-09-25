@@ -1,0 +1,37 @@
+.BlogPreview-Header {
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.BlogPreview-Article {
+    margin-top: 32px;
+}
+
+.BlogPreview-ArticleHeader {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 26px;
+
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.BlogPreview-ArticleHeader a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.BlogPreview-ArticleContent {
+    margin: 8px 0 0;
+}
+
+.BlogPreview-ArticleDate {
+    color: var(--color-transparent-gray);
+}
+
+.BlogPreview-ArticleDate::before {
+    content: ' ';
+}
