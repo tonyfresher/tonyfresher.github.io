@@ -1,0 +1,29 @@
+.BlogPreview-Header {
+    margin: 0;
+
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+}
+
+.BlogPreview-Article {
+    margin-top: 32px;
+}
+
+.BlogPreview-ArticleHeader {
+    margin: 0;
+
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
+}
+
+.BlogPreview-ArticleContent {
+    margin: 8px 0 0;
+}
+
+.BlogPreview-ArticleDate {
+    color: var(--inactive-color);
+}
+
+.BlogPreview-ArticleDate::before {
+    content: ' ';
+}
