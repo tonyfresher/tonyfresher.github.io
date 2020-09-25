@@ -5,7 +5,6 @@ import {cn} from '@bem-react/classname';
 import {formatDate} from '../../utils/format';
 
 import i18n from './i18n/ru';
-import {ARTICLES} from './data';
 
 import {ArticlePreviewProps} from './types';
 
@@ -38,7 +37,7 @@ export default function BlogPreview() {
     return (
         <div className={blogPreview()}>
             <h2 className={blogPreview('Header')}>{i18n.header}</h2>
-            {ARTICLES.map(article => (
+            {i18n.articles.map(article => (
                 <ArticlePreview
                     header={article.header}
                     content={article.content}

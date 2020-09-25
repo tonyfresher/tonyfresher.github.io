@@ -1,11 +1,7 @@
 import {Article} from '../../types';
 
 // TODO: Собирать ссылку через id после добавления блога
-export interface ArticleWithLink extends Article {
+export interface ArticlePreviewProps
+    extends Pick<Article, 'header' | 'content' | 'createdAt'> {
     link: string;
 }
-
-export type ArticlePreviewProps = Pick<
-    ArticleWithLink,
-    'header' | 'content' | 'createdAt' | 'link'
->;
