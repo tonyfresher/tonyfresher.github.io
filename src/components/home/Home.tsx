@@ -3,6 +3,7 @@ import React from 'react';
 import {cn} from '@bem-react/classname';
 
 import BlogPreview from '../BlogPreview';
+import Link from '../Link';
 import Logo from '../Logo';
 
 import CroppedPhoto from './images/me-cropped.jpg';
@@ -21,14 +22,13 @@ function Projects() {
                     <div className={home('Project', {past})} key={name}>
                         <h3 className={home('ProjectHeader')}>
                             {`${position} @ `}
-                            <a
+                            <Link
                                 className={home('ProjectName')}
                                 href={link}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                newWindow
                             >
                                 {name}
-                            </a>
+                            </Link>
                             {period && (
                                 <span className={home('ProjectPeriod')}>
                                     {period}
@@ -51,16 +51,15 @@ function Links() {
     return (
         <div className={home('Links')}>
             {i18n.links.map(({service, link, username}) => (
-                <a
+                <Link
                     className={home('Link')}
                     href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     key={service}
+                    newWindow
                 >
                     {service}
                     <span className={home('LinkUsername')}>{username}</span>
-                </a>
+                </Link>
             ))}
         </div>
     );
@@ -78,7 +77,20 @@ export default function Home() {
                         src={CroppedPhoto}
                         alt="Me"
                     />
-                    <p className={home('About')}>{i18n.about}</p>
+                    <div className={home('About')}>
+                        <p>
+                            {i18n.about[0]}
+                            <Link href={i18n.freshLink} newWindow>
+                                {i18n.about[1]}
+                            </Link>
+                            {i18n.about[2]}
+                            <Link href={i18n.surveysLink} newWindow>
+                                {i18n.about[3]}
+                            </Link>
+                            {i18n.about[4]}
+                        </p>
+                        <p>{i18n.about[5]}</p>
+                    </div>
                     <BlogPreview />
                 </div>
                 <div className={home('Column', {position: 'right'})}>

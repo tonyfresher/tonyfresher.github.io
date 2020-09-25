@@ -4,6 +4,8 @@ import {cn} from '@bem-react/classname';
 
 import {formatDate} from '../../utils/format';
 
+import Link from '../Link';
+
 import i18n from './i18n/ru';
 
 import {ArticlePreviewProps} from './types';
@@ -21,9 +23,9 @@ function ArticlePreview(props: ArticlePreviewProps) {
         <div className={blogPreview('Article')}>
             <h3 className={blogPreview('ArticleHeader')}>
                 {/* TODO: Открывать статьи в этом же окне после появления блога */}
-                <a href={link} target="_blank" rel="noopener noreferrer">
+                <Link href={link} newWindow>
                     {header}
-                </a>
+                </Link>
             </h3>
             <p className={blogPreview('ArticleContent')}>
                 {content}

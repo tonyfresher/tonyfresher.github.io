@@ -35,6 +35,14 @@
     white-space: pre-line;
 }
 
+.Home-About p {
+    margin: 0;
+}
+
+.Home-About p + p {
+    margin: 12px 0 0;
+}
+
 .Home .BlogPreview {
     margin-top: 40px;
 }
@@ -67,15 +75,6 @@
     color: var(--color-transparent-gray);
 }
 
-.Home-ProjectName {
-    color: var(--color-black);
-    text-decoration: none;
-}
-
-.Home-ProjectName:hover {
-    text-decoration: underline;
-}
-
 .Home-Project_past .Home-ProjectName {
     color: var(--color-transparent-gray);
 }
@@ -94,9 +93,6 @@
 
 .Home-Link {
     width: max-content;
-
-    color: var(--color-black);
-    text-decoration: none;
 }
 
 .Home-Link + .Home-Link {
