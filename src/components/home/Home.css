@@ -1,0 +1,120 @@
+.Home {
+    margin: 100px;
+}
+
+.Home-Content {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: 400px 332px;
+    column-gap: 232px;
+
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.Home-Greeting {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.Home-Photo {
+    width: 100%;
+}
+
+.Home-Photo_size_cropped {
+    display: none;
+}
+
+.Home-About {
+    margin: 32px 0 0;
+
+    white-space: pre-line;
+}
+
+.Home-Projects,
+.Home-Links {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Home-Project + .Home-Project {
+    margin-top: 16px;
+}
+
+.Home-Project_past + .Home-Project_past {
+    margin-top: 8px;
+}
+
+.Home-ProjectHeader {
+    margin: 0;
+
+    font-size: 20px;
+}
+
+.Home-Project_past .Home-ProjectHeader {
+    font-weight: normal;
+
+    color: var(--color-transparent-gray);
+}
+
+.Home-ProjectName {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.Home-ProjectName:hover {
+    text-decoration: underline;
+}
+
+.Home-Project_past .Home-ProjectName {
+    color: var(--color-transparent-gray);
+}
+
+.Home-ProjectDescription {
+    margin: 8px 0 0;
+}
+
+.Home-ProjectPeriod {
+    color: var(--color-transparent-gray);
+}
+
+.Home-ProjectPeriod::before {
+    content: ' ';
+}
+
+.Home-Link {
+    width: max-content;
+
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.Home-Link + .Home-Link {
+    margin-top: 16px;
+}
+
+.Home-LinkUsername {
+    visibility: hidden;
+
+    color: var(--color-transparent-gray);
+}
+
+.Home-LinkUsername::before {
+    content: ' ';
+}
+
+.Home-Link:hover {
+    font-weight: 600;
+}
+
+.Home-Link:hover .Home-LinkUsername {
+    visibility: visible;
+
+    font-weight: normal;
+}
