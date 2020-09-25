@@ -10,6 +10,7 @@ export default {
     ],
     surveysLink: 'https://surveys.yandex.ru',
     freshLink: 'https://t.me/freshwrites',
+    projectsHeader: 'Делаю',
     projects: [
         {
             name: 'Freш',

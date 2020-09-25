@@ -1,6 +1,10 @@
 :root {
     --text-font-size: 20px;
     --text-line-height: 26px;
+    --h2-font-size: 30px;
+    --h2-line-height: 39px;
+    --h1-font-size: 60px;
+    --h1-line-height: 78px;
     --background-color-rgb: 255, 255, 255;
     --background-color: rgb(var(--background-color-rgb));
     --foreground-color-rgb: 0, 0, 0;
@@ -8,4 +12,22 @@
     --inactive-color: rgba(var(--foreground-color-rgb), 0.3);
     --blue-accent-color-rgb: 62, 136, 223;
     --blue-accent-color: rgb(var(--blue-accent-color-rgb));
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --text-font-size: 18px;
+        --text-line-height: 23px;
+        --h2-font-size: 28px;
+        --h2-line-height: 36px;
+        --h1-font-size: 56px;
+        --h1-line-height: 73px;
+    }
+}
+
+@media (max-width: 540px) {
+    :root {
+        --h1-font-size: 48px;
+        --h1-line-height: 62px;
+    }
 }

@@ -17,6 +17,7 @@ const home = cn('Home');
 function Projects() {
     return (
         <div className={home('Projects')}>
+            <h2 className={home('ProjectsHeader')}>{i18n.projectsHeader}</h2>
             {i18n.projects.map(
                 ({name, position, link, period, description, past}) => (
                     <div className={home('Project', {past})} key={name}>

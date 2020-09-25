@@ -1,8 +1,8 @@
 .BlogPreview-Header {
     margin: 0;
 
-    font-size: 30px;
-    line-height: 39px;
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
 }
 
 .BlogPreview-Article {
