@@ -1,5 +1,5 @@
 export default {
-    greeting: 'Ну, привет!',
+    greeting: 'Привет!',
     about: [
         'Ищу, создаю и делюсь ',
         'во Freше',
