@@ -196,6 +196,8 @@
     }
 
     .Home-Content {
+        margin-top: 40px;
+
         grid-template-columns: auto;
     }
 }
