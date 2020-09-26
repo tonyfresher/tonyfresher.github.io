@@ -171,9 +171,7 @@
 
     .Home-Photo_size_cropped,
     .Home-About,
-    .BlogPreview-Article,
-    .Home-Projects,
-    .Home-Project {
+    .Home-Projects {
         margin-top: 20px;
     }
 
@@ -183,6 +181,8 @@
 
     .Home-ProjectsHeader {
         display: block;
+
+        margin-bottom: 20px;
     }
 
     .Home-Links {
