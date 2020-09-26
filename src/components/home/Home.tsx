@@ -82,14 +82,6 @@ export default function Home() {
                                 {i18n.about[1]}
                             </Link>
                             {i18n.about[2]}
-                            <Link
-                                href={i18n.surveysLink}
-                                color="blue"
-                                newWindow
-                            >
-                                {i18n.about[3]}
-                            </Link>
-                            {i18n.about[4]}
                         </p>
                     </div>
                     <BlogPreview />
