@@ -27,9 +27,7 @@ function ArticlePreview(props: ArticlePreviewProps) {
         <div className={blogPreview('Article')}>
             <h3 className={blogPreview('ArticleHeader')}>
                 {/* TODO: Открывать статьи в этом же окне после появления блога */}
-                <Link href={getPostLink(id)} newWindow>
-                    {header}
-                </Link>
+                <Link href={getPostLink(id)}>{header}</Link>
             </h3>
             <p className={blogPreview('ArticleContent')}>
                 {content}
