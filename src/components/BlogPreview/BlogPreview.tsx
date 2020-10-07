@@ -14,8 +14,12 @@ import './BlogPreview.css';
 
 const blogPreview = cn('BlogPreview');
 
+function getPostLink(id: string): string {
+    return `/blog/${id}`;
+}
+
 function ArticlePreview(props: ArticlePreviewProps) {
-    const {header, content, createdAt, link} = props;
+    const {id, header, content, createdAt} = props;
 
     const date = formatDate(createdAt, true);
 
@@ -23,7 +27,7 @@ function ArticlePreview(props: ArticlePreviewProps) {
         <div className={blogPreview('Article')}>
             <h3 className={blogPreview('ArticleHeader')}>
                 {/* TODO: Открывать статьи в этом же окне после появления блога */}
-                <Link href={link} newWindow>
+                <Link href={getPostLink(id)} newWindow>
                     {header}
                 </Link>
             </h3>
@@ -41,11 +45,11 @@ export default function BlogPreview() {
             <h2 className={blogPreview('Header')}>{i18n.header}</h2>
             {i18n.articles.map(article => (
                 <ArticlePreview
-                    header={article.header}
                     content={article.content}
                     createdAt={article.createdAt}
+                    header={article.header}
+                    id={article.id}
                     key={article.id}
-                    link={article.link}
                 />
             ))}
         </div>
