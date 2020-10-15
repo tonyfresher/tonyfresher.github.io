@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700');
+@font-face {
+    font-family: 'PT Root UI VF';
+    src: url('./fonts/pt-root-vf/PT Root UI VF.eot');
+    src: url('./fonts/pt-root-vf/PT Root UI VF.eot?#iefix')
+            format('embedded-opentype'),
+        url('./fonts/pt-root-vf/PT Root UI VF.woff2') format('woff2'),
+        url('./fonts/pt-root-vf/PT Root UI VF.woff') format('woff'),
+        url('./fonts/pt-root-vf/PT Root UI VF.ttf') format('truetype');
+    font-weight: 300 700;
+    font-style: normal;
+}
 
 body {
     margin: 0;
 
-    font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
+    font-family: 'PT Root UI VF', 'Helvetica', sans-serif;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
