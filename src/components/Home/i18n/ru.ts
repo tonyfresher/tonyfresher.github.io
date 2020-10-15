@@ -83,5 +83,5 @@ export default {
             username: '/TonyFresher'
         }
     ],
-    lastNameNote: 'Фамилия настоящая.'
+    lastNameNote: 'Да, это такая фамилия.'
 };
