@@ -3,8 +3,8 @@
     --text-line-height: 26px;
     --h2-font-size: 30px;
     --h2-line-height: 39px;
-    --h1-font-size: 60px;
-    --h1-line-height: 78px;
+    --h1-font-size: 40px;
+    --h1-line-height: 50px;
     --background-color-rgb: 255, 255, 255;
     --background-color: rgb(var(--background-color-rgb));
     --foreground-color-rgb: 0, 0, 0;
@@ -18,14 +18,12 @@
     :root {
         --h2-font-size: 28px;
         --h2-line-height: 36px;
-        --h1-font-size: 56px;
-        --h1-line-height: 73px;
     }
 }
 
 @media (max-width: 540px) {
     :root {
-        --h1-font-size: 48px;
-        --h1-line-height: 62px;
+        --h1-font-size: 28px;
+        --h1-line-height: 36px;
     }
 }
