@@ -51,36 +51,6 @@ export default {
             service: 'Фейсбук',
             link: 'https://www.facebook.com/antonfresher/',
             username: '@antonfresher'
-        },
-        {
-            service: 'Биханс',
-            link: 'https://behance.net/tonyfresher',
-            username: '/tonyfresher'
-        },
-        {
-            service: 'Линкдин',
-            link: 'https://linkedin.com/in/tonyfresher',
-            username: '/tonyfresher'
-        },
-        {
-            service: 'Гитхаб',
-            link: 'https://github.com/tonyfresher',
-            username: '/tonyfresher'
-        },
-        {
-            service: 'Букмейт',
-            link: 'https://ru.bookmate.com/@tonyfresher',
-            username: '@tonyfresher'
-        },
-        {
-            service: 'Спотифай',
-            link: 'https://open.spotify.com/user/7q8bcesl8wp0rsa78f8e0rvoz',
-            username: 'Anton Fresher'
-        },
-        {
-            service: 'Кинопоиск',
-            link: 'https://www.kinopoisk.ru/user/3085085',
-            username: '/TonyFresher'
         }
     ],
     lastNameNote: 'Да, это такая фамилия.'
