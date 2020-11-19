@@ -21,18 +21,21 @@ function getPostLink(id: string): string {
 function ArticlePreview(props: ArticlePreviewProps) {
     const {id, header, content, createdAt} = props;
 
-    const date = formatDate(createdAt, true);
-
     return (
         <div className={blogPreview('Article')}>
             <h3 className={blogPreview('ArticleHeader')}>
-                {/* TODO: Открывать статьи в этом же окне после появления блога */}
                 <Link href={getPostLink(id)}>{header}</Link>
             </h3>
-            <p className={blogPreview('ArticleContent')}>
-                {content}
-                <span className={blogPreview('ArticleDate')}>{date}</span>
-            </p>
+            {content && (
+                <p className={blogPreview('ArticleContent')}>
+                    {content}
+                    {createdAt && (
+                        <span className={blogPreview('ArticleDate')}>
+                            {formatDate(createdAt, true)}
+                        </span>
+                    )}
+                </p>
+            )}
         </div>
     );
 }
