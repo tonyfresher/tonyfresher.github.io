@@ -4,7 +4,7 @@ import {cn} from '@bem-react/classname';
 
 import BlogPreview from '../BlogPreview';
 import Link from '../Link';
-import Logo from '../Logo';
+import Page from '../Page';
 
 import CroppedPhoto from './images/me-cropped.jpg';
 import FullPhoto from './images/me-full.jpg';
@@ -65,9 +65,8 @@ function Links() {
 
 export default function Home() {
     return (
-        <div className={home()}>
-            <Logo />
-            <div className={home('Content')}>
+        <Page direction="vertical">
+            <div className={home()}>
                 <div className={home('Column', {position: 'left'})}>
                     <h1 className={home('Greeting')}>{i18n.greeting}</h1>
                     <img
@@ -97,6 +96,6 @@ export default function Home() {
                 </div>
                 <p className={home('FooterNote')}>{i18n.lastNameNote}</p>
             </div>
-        </div>
+        </Page>
     );
 }

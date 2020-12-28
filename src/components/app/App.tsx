@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {YMInitializer} from 'react-yandex-metrika';
 
 import Home from '../Home';
+import NotFound from '../NotFound';
 
 import './App.css';
 
@@ -16,9 +17,8 @@ export default function App() {
                 version="2"
             />
             <Switch>
-                <Route path="/">
-                    <Home />
-                </Route>
+                <Route exact path="/" component={Home} />
+                <Route component={NotFound} />
             </Switch>
         </Router>
     );

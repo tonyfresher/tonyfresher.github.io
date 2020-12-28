@@ -1,10 +1,4 @@
 .Home {
-    margin: 100px;
-}
-
-.Home-Content {
-    margin-top: 60px;
-
     display: grid;
     grid-template-columns: 400px 332px;
     column-gap: 232px;
@@ -141,10 +135,6 @@
 
 @media (max-width: 1200px) {
     .Home {
-        margin: 60px;
-    }
-
-    .Home-Content {
         grid-template-columns: 360px 332px;
         column-gap: 140px;
     }
@@ -152,10 +142,6 @@
 
 @media (max-width: 960px) {
     .Home {
-        margin: 60px;
-    }
-
-    .Home-Content {
         grid-template-columns: 400px;
         grid-auto-rows: auto;
         row-gap: 40px;
@@ -192,12 +178,6 @@
 
 @media (max-width: 540px) {
     .Home {
-        margin: 60px 20px;
-    }
-
-    .Home-Content {
-        margin-top: 40px;
-
         grid-template-columns: auto;
     }
 }

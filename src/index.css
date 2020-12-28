@@ -13,6 +13,6 @@
 body {
     margin: 0;
 
-    font-family: 'PT Root UI VF', 'Helvetica', sans-serif;
-    font-weight: 450;
+    font-family: var(--text-font-family);
+    font-weight: var(--text-font-weight);
 }
